@@ -1,4 +1,4 @@
-﻿namespace C63.LudumDare31.Game.Characters.Callers
+﻿namespace C63.LudumDare31.Game.Characters
 {
     public class Boss : Base
     {
