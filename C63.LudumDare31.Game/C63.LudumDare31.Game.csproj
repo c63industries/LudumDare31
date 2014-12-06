@@ -36,6 +36,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Characters\Base.cs" />
+    <Compile Include="Characters\Boss.cs" />
+    <Compile Include="Characters\Callers\Base.cs" />
+    <Compile Include="Characters\Callers\Example.cs" />
+    <Compile Include="Data\Answer.cs" />
+    <Compile Include="Data\Dialog.cs" />
+    <Compile Include="Data\Emotions.cs" />
+    <Compile Include="Data\Question.cs" />
     <Compile Include="Phone.cs">
       <SubType>Form</SubType>
     </Compile>
