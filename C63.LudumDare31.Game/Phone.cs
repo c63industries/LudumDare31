@@ -15,15 +15,5 @@ namespace C63.LudumDare31.Game
         {
             InitializeComponent();
         }
-
-        private void BTNHAN_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
