@@ -193,7 +193,6 @@
             this.textBox1.Size = new System.Drawing.Size(123, 26);
             this.textBox1.TabIndex = 20;
             this.textBox1.Text = "Caller ID";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Line1
             // 
