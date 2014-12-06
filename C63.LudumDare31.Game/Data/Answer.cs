@@ -12,8 +12,8 @@
             this.Dialog = dialog;
         }
 
-        public Answer(string dialog)
-            : this(() => dialog)
+        public Answer(params string[] dialog)
+            : this(() => System.String.Join(System.Environment.NewLine, dialog))
         {
         }
 
