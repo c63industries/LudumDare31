@@ -40,5 +40,10 @@ namespace C63.LudumDare31.Game
         {
 
         }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
