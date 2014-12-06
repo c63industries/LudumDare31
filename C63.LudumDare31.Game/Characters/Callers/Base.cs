@@ -33,6 +33,8 @@
             this.Calls++;
             this.Connected = true;
 
+            System.Console.WriteLine("{0} is connected.", this);
+
             if (this.OnConnect == null)
             {
                 return;
@@ -57,12 +59,19 @@
         {
             this.Connected = false;
 
+            System.Console.WriteLine("{0} is disconnected.", this);
+
             if (this.OnDiconnect == null)
             {
                 return;
             }
 
             this.OnDiconnect();
+        }
+
+        public override string ToString()
+        {
+            return "Caller";
         }
     }
 }

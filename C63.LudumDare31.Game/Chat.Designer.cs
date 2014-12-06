@@ -46,7 +46,6 @@
             this.ANS1.TabIndex = 1;
             this.ANS1.Text = "Snowman: Why u so squatchy?";
             this.ANS1.UseVisualStyleBackColor = true;
-            this.ANS1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ANS2
             // 
@@ -56,7 +55,6 @@
             this.ANS2.TabIndex = 2;
             this.ANS2.Text = "Snowman: I\'m sure everyone will pay you back.";
             this.ANS2.UseVisualStyleBackColor = true;
-            this.ANS2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ANS3
             // 
@@ -96,7 +94,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(427, 345);
             this.tableLayoutPanel1.TabIndex = 5;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // Dia1
             // 
@@ -109,7 +106,6 @@
             this.Dia1.Text = "Lady Ducky: I\'m a duck quack quack quack. I need a raise for bread quack quack. I" +
     " spent all my bread money on sharpies for the break room quack. Nobody even paid" +
     " me back quack.";
-            this.Dia1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // Chat
             // 
@@ -119,7 +115,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Chat";
             this.Text = "Chat";
-            this.Load += new System.EventHandler(this.Chat_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
