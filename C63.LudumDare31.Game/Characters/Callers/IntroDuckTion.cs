@@ -4,6 +4,12 @@ namespace C63.LudumDare31.Game.Characters.Callers
 {
     public class Example : Base
     {
+        static public bool duckCall
+        {
+            get;
+            private set;
+        }
+
         public Example()
             : base()
         {
@@ -37,14 +43,18 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                     this.Dialog.Add
                                                         (
                                                             "I have to hang up now.",
-                                                            "Quackquackquack!"
+                                                            "Quackquackquack!",
+
+                                                            () => duckCall = false
                                                         );
                                                 }
                                             );
                                         this.Dialog.Add
                                             (
                                                 "Okay, I'll put you through.",
-                                                "Quackquack."
+                                                "Quackquack.",
+
+                                                () => duckCall = true
                                             );
                                     }
                                 );
