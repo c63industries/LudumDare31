@@ -102,6 +102,21 @@
       <DependentUpon>Phone.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Audio\Buttons\0.wav" />
+    <Content Include="Audio\Buttons\1.wav" />
+    <Content Include="Audio\Buttons\2.wav" />
+    <Content Include="Audio\Buttons\3.wav" />
+    <Content Include="Audio\Buttons\4.wav" />
+    <Content Include="Audio\Buttons\5.wav" />
+    <Content Include="Audio\Buttons\6.wav" />
+    <Content Include="Audio\Buttons\7.wav" />
+    <Content Include="Audio\Buttons\8.wav" />
+    <Content Include="Audio\Buttons\9.wav" />
+    <Content Include="Audio\Buttons\pound.wav" />
+    <Content Include="Audio\Buttons\star.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
