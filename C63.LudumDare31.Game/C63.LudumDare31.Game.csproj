@@ -104,18 +104,42 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Audio\Buttons\0.wav" />
-    <Content Include="Audio\Buttons\1.wav" />
-    <Content Include="Audio\Buttons\2.wav" />
-    <Content Include="Audio\Buttons\3.wav" />
-    <Content Include="Audio\Buttons\4.wav" />
-    <Content Include="Audio\Buttons\5.wav" />
-    <Content Include="Audio\Buttons\6.wav" />
-    <Content Include="Audio\Buttons\7.wav" />
-    <Content Include="Audio\Buttons\8.wav" />
-    <Content Include="Audio\Buttons\9.wav" />
-    <Content Include="Audio\Buttons\pound.wav" />
-    <Content Include="Audio\Buttons\star.wav" />
+    <Content Include="Audio\Buttons\0.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\3.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\4.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\5.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\6.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\7.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\8.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\9.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\pound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Audio\Buttons\star.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
