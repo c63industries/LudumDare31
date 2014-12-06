@@ -44,6 +44,7 @@
     <Compile Include="Data\Dialog.cs" />
     <Compile Include="Data\Emotions.cs" />
     <Compile Include="Data\Question.cs" />
+    <Compile Include="Game.cs" />
     <Compile Include="Phone.cs">
       <SubType>Form</SubType>
     </Compile>
