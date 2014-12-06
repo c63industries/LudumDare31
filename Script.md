@@ -13,10 +13,15 @@ CODENAME "SANTA CLAWS SCREEN"
 
 #Level 0
 ***
+"Finished"
+Welcome.cs
+IntroDuckTion.cs
+SantaIntro.cs
 
 ***
 #Level 1
 ***
+"Grandma" calls and you have to determine if she's legit or not, and if she is, does Santa want to speak to her?
 
 ***
 #Level 2

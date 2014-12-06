@@ -33,41 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Data\App.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Characters\Base.cs" />
     <Compile Include="Characters\Boss.cs" />
     <Compile Include="Characters\Callers\Base.cs" />
     <Compile Include="Characters\Callers\Example.cs" />
-    <Compile Include="Chat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Chat.Designer.cs">
-      <DependentUpon>Chat.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Characters\Callers\IntroDuckTion.cs" />
+    <Compile Include="Characters\Callers\RoboCaller.cs" />
+    <Compile Include="Characters\Callers\SantaIntro.cs" />
+    <Compile Include="Characters\Callers\Telemarketer.cs" />
+    <Compile Include="Characters\Callers\Welcome.cs" />
     <Compile Include="Data\Answer.cs" />
     <Compile Include="Data\Dialog.cs" />
     <Compile Include="Data\Emotions.cs" />
     <Compile Include="Data\Question.cs" />
-    <Compile Include="PinkSlip.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PinkSlip.Designer.cs">
-      <DependentUpon>PinkSlip.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Notepad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Notepad.Designer.cs">
-      <DependentUpon>Notepad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Game.cs" />
     <Compile Include="Phone.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,11 +56,6 @@
       <DependentUpon>Phone.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -89,57 +65,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Chat.resx">
-      <DependentUpon>Chat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PinkSlip.resx">
-      <DependentUpon>PinkSlip.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Notepad.resx">
-      <DependentUpon>Notepad.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Phone.resx">
       <DependentUpon>Phone.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <Content Include="Audio\Buttons\0.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\1.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\2.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\3.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\4.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\5.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\6.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\7.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\8.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\9.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\pound.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Audio\Buttons\star.wav">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

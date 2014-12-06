@@ -3,13 +3,13 @@ using C63.LudumDare31.Game.Characters.Callers;
 
 namespace C63.LudumDare31.Game.Characters.Callers
 {
-    public class Example : Base
+    public class SantaIntro : Base
     {
-        public Example()
+        public SantaIntro()
             : base()
         {
 
-            if (duckCall == true)
+            if (IntroDuckTion.duckCall == true)
             {
                 this.Dialog.Add
                     (
