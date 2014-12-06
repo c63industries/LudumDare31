@@ -41,36 +41,28 @@ namespace C63.LudumDare31.Game.Characters.Callers
             this.Dialog.Add
             (
                 "Who is calling?",
+                "This is Example.",
                 () =>
                 {
                     this.Dialog.Add
                     (
                         "What are you calling about?",
+                        "I'd like to speak to your boss.",
                         () =>
                         {
                             this.Dialog.Add
                             (
                                 "Alright, please hold.",
-                                () =>
-                                {
-                                    return "Thank you.";
-                                }
+                                "Thank you."
                             );
 
                             this.Dialog.Add
                             (
                                 "Sorry, my boss can not be disturbed right now.",
-                                () =>
-                                {
-                                    return "But I really need to speak to your boss!";
-                                }
+                                "But I really need to speak to your boss!"
                             );
-
-                            return "I'd like to speak to your boss.";
                         }
                     );
-
-                    return "This is Example.";
                 }
             );
         }

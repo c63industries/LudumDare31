@@ -75,7 +75,7 @@
 
         //
 
-        public void Add(System.Func<string> question, string answer)
+        public void Add(System.Func<string> question, string answer, System.Action action = null)
         {
             if (question == null)
             {
@@ -87,7 +87,14 @@
                 throw new System.ArgumentNullException("answer");
             }
 
-            this.Add(new Question(question), new Answer(answer));
+            if (action == null)
+            {
+                this.Add(new Question(question), new Answer(answer));
+            }
+            else
+            {
+                this.Add(new Question(question), new Answer(() => { action(); return answer; }));
+            }
         }
 
         public void Add(string question, System.Func<string> answer)
@@ -122,7 +129,7 @@
             this.Add(new Question(question), answer);
         }
 
-        public void Add(Question question, string answer)
+        public void Add(Question question, string answer, System.Action action = null)
         {
             if (question == null)
             {
@@ -134,10 +141,17 @@
                 throw new System.ArgumentNullException("answer");
             }
 
-            this.Add(question, new Answer(answer));
+            if (action == null)
+            {
+                this.Add(question, new Answer(answer));
+            }
+            else
+            {
+                this.Add(question, new Answer(() => { action(); return answer; }));
+            }
         }
 
-        public void Add(string question, string answer)
+        public void Add(string question, string answer, System.Action action = null)
         {
             if (question == null)
             {
@@ -149,7 +163,14 @@
                 throw new System.ArgumentNullException("answer");
             }
 
-            this.Add(new Question(question), new Answer(answer));
+            if (action == null)
+            {
+                this.Add(new Question(question), new Answer(answer));
+            }
+            else
+            {
+                this.Add(new Question(question), new Answer(() => { action(); return answer; }));
+            }
         }
     }
 }
