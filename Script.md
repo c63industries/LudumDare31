@@ -3,11 +3,11 @@ CODENAME "SANTA CLAWS SCREEN"
 ***
 
 * [Level 0](#Level 0) - Merry Christmas from the North Pole! (introduction, duck, telemarketer)
-* [Level 1]() - Let the right one in (sweet "grandma," media)
-* [Level 2]() - For babies (toy safety, drugs?!)
-* [Level 3]() - The Council of Sylvan Artisans (labor unions, racist grandma)
-* [Level 4]() - Santa's pilot's license (FAA, catnip problems)
-* [Level 5]() - Santa himself (boss)
+* [Level 1](#Level 1) - Let the right one in (sweet "grandma," media)
+* [Level 2](#Level 2) - For babies (toy safety, drugs?!)
+* [Level 3](#Level 3) - The Council of Sylvan Artisans (labor unions, racist grandma)
+* [Level 4](#Level 4) - Santa's pilot's license (FAA, catnip problems)
+* [Level 5](#Level 5) - Santa himself (boss)
 
 ***
 
@@ -42,25 +42,28 @@ CODENAME "SANTA CLAWS SCREEN"
 * [Did you really? I thought the elves were making the toys. Are you okay?]()
 
 ####Yes, sir!
->Ya'll a lot better at this job than that last guy. Made everybody what callt us up mad with his "Aaye!" and "Nam-mary" kinder talk. Folks thought we was using some foreign call center and callt us un-Merican misers and said we ain't Christian. Really ruint the holiday mood.
+>Ya'll a lot better at this job than that last guy. Made everybody what callt us up mad with his "Aaye!" and "Nam-mary" kinder talk. Folks thought we was using some foreign call center and callt us un-Merican misers and said we ain't Christian. Really ruint the holiday -- I mean Christmas -- mood, you know what I'm sayin'?
+
+####Which calls should I allow through?
+>Is you even got anything but snow in that head a yours? What 'm I payin' ya'll $2.15 and tips an hour for if ya'll ain't know'd this stuff?
 
 ####
 
 ***
-# Level 1
+#Level 1
 ***
 
 ***
-# Level 2
+#Level 2
 ***
 
 ***
-# Level 3
+#Level 3
 ***
 
 ***
-# Level 4
+#Level 4
 ***
 
 ***
-# Level 5
+#Level 5

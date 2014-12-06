@@ -67,6 +67,7 @@
     <Compile Include="Notepad.Designer.cs">
       <DependentUpon>Notepad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game.cs" />
     <Compile Include="Phone.cs">
       <SubType>Form</SubType>
     </Compile>
