@@ -35,5 +35,10 @@ namespace C63.LudumDare31.Game
         {
 
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
