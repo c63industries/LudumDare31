@@ -18,7 +18,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
             (
                 "North Pole, how may I help you?",
                 "Quack!",
-                () =>
+                ()=>
                 {
                     this.Dialog.Add
                         (
@@ -32,20 +32,20 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                 (
                                     "Would you like to speak to Mr. Claws?",
                                     "Quack.",
-                                    () =>
+                                    ()=>
                                     {
                                         this.Dialog.Add
                                             (
                                                 "I'm sorry, I can't put a duck through to my boss.",
                                                 "QUUUUUUUUUAAAACK",
-                                                () =>
+                                                ()=>
                                                 {
                                                     this.Dialog.Add
                                                         (
                                                             "I have to hang up now.",
                                                             "Quackquackquack!",
 
-                                                            () => duckCall = false
+                                                            ()=> duckCall = false
                                                         );
                                                 }
                                             );
@@ -54,7 +54,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 "Okay, I'll put you through.",
                                                 "Quackquack.",
 
-                                                () => duckCall = true
+                                                ()=> duckCall = true
                                             );
                                     }
                                 );
