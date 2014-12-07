@@ -30,6 +30,7 @@
 
             this.Notepad.Show();
             this.Phone.Show();
+           
         }
 
         public Chat Chat

@@ -38,6 +38,7 @@
     </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Characters\Base.cs" />

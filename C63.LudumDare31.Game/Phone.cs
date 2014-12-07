@@ -11,7 +11,7 @@ namespace C63.LudumDare31.Game
         {
             InitializeComponent();
 
-            this.
+          
 
             this._Audio = new System.Collections.Generic.Dictionary<System.Windows.Forms.Button, System.Media.SoundPlayer>();
 
