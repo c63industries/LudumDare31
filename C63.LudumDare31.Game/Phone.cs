@@ -103,6 +103,8 @@ namespace C63.LudumDare31.Game
             System.Console.WriteLine("{0} is connecting on {1}.", this, line);
 
             line.Caller.Connect();
+
+            Program.Chat.Update();
         }
     }
 }

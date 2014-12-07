@@ -43,18 +43,36 @@
     <Compile Include="Characters\Callers\IntroDuckTion.cs" />
     <Compile Include="Characters\Callers\RoboCaller.cs" />
     <Compile Include="Characters\Callers\SantaIntro.cs" />
-    <Compile Include="Characters\Callers\Telemarketer.cs" />
     <Compile Include="Characters\Callers\Welcome.cs" />
+    <Compile Include="Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\Answer.cs" />
     <Compile Include="Data\Dialog.cs" />
     <Compile Include="Data\Emotions.cs" />
     <Compile Include="Data\Line.cs" />
     <Compile Include="Data\Question.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notepad.Designer.cs">
+      <DependentUpon>Notepad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Phone.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Phone.Designer.cs">
       <DependentUpon>Phone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PinkSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PinkSlip.Designer.cs">
+      <DependentUpon>PinkSlip.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
   </ItemGroup>
@@ -66,8 +84,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notepad.resx">
+      <DependentUpon>Notepad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Phone.resx">
       <DependentUpon>Phone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PinkSlip.resx">
+      <DependentUpon>PinkSlip.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
