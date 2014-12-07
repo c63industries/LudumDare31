@@ -11,6 +11,8 @@ namespace C63.LudumDare31.Game
         {
             InitializeComponent();
 
+            this.
+
             this._Audio = new System.Collections.Generic.Dictionary<System.Windows.Forms.Button, System.Media.SoundPlayer>();
 
             this._Audio.Add(this.BTN0, new System.Media.SoundPlayer("Audio\\Buttons\\0.wav"));
@@ -105,6 +107,11 @@ namespace C63.LudumDare31.Game
             line.Caller.Connect();
 
             Program.Chat.Update();
+        }
+
+        private void Phone_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notepad));
             this.NTPTXT1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // NTPTXT1
             // 
-            this.NTPTXT1.Location = new System.Drawing.Point(4, 4);
+            this.NTPTXT1.BackColor = System.Drawing.Color.White;
+            this.NTPTXT1.Location = new System.Drawing.Point(12, -42);
             this.NTPTXT1.Multiline = true;
             this.NTPTXT1.Name = "NTPTXT1";
             this.NTPTXT1.Size = new System.Drawing.Size(338, 302);
@@ -44,9 +46,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 303);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(341, 420);
             this.Controls.Add(this.NTPTXT1);
             this.Name = "Notepad";
+            this.RightToLeftLayout = true;
             this.Text = "Notepad";
             this.Load += new System.EventHandler(this.Notepad_Load);
             this.ResumeLayout(false);

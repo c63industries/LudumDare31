@@ -53,7 +53,7 @@
             // 
             // txtDialog
             // 
-            this.txtDialog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDialog.Dock = System.Windows.Forms.DockStyle.Left;
             this.txtDialog.ForeColor = System.Drawing.Color.Olive;
             this.txtDialog.Location = new System.Drawing.Point(3, 3);
             this.txtDialog.Name = "txtDialog";

@@ -10,6 +10,8 @@ namespace C63.LudumDare31.Game
         {
             InitializeComponent();
 
+            this.AllowTransparency.
+
             this._Questions = new System.Collections.Generic.Dictionary<System.Windows.Forms.LinkLabel, Data.Question>();
         }
 

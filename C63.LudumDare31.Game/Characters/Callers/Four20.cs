@@ -6,6 +6,45 @@ namespace C63.LudumDare31.Game.Characters.Callers
     {
         public Four20()
             : base()
+
+
+            /*
+             * 
+             *  {
+            this.Dialog.Add
+                (
+                    "",
+                    "Wow, wait. Are you serious? Am I talking to dog right now?",
+                    ()=>
+                    {
+                        this.Dialog.Add
+                        (
+                            "Yes.",
+                            "Wow. Santa has given us talking dogs. He can truly do anything."
+                        );
+                    }
+             * 
+             *   {
+                        this.Dialog.Add
+                        (
+                            "Yes.",
+                            "Wow. Santa has given us talking dogs. He can truly do anything."
+                        );
+                    }  {
+                        this.Dialog.Add
+                        (
+                            "Yes.",
+                            "Wow. Santa has given us talking dogs. He can truly do anything."
+                        );
+                    }  {
+                        this.Dialog.Add
+                        (
+                            "Yes.",
+                            "Wow. Santa has given us talking dogs. He can truly do anything."
+                        );
+                    }
+                );
+             */
         {
             this.Dialog.Add
                 (
