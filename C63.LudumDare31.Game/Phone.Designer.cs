@@ -64,8 +64,6 @@
             this.BTN1.Size = new System.Drawing.Size(56, 57);
             this.BTN1.TabIndex = 0;
             this.BTN1.UseVisualStyleBackColor = false;
-            this.BTN1.Click += new System.EventHandler(this.BTN1_Click);
-            this.BTN1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MouseDown);
             // 
             // BTN2
             // 
@@ -76,7 +74,6 @@
             this.BTN2.Size = new System.Drawing.Size(58, 57);
             this.BTN2.TabIndex = 1;
             this.BTN2.UseVisualStyleBackColor = false;
-            this.BTN2.Click += new System.EventHandler(this.BTN1_Click);
             // 
             // BTN3
             // 
@@ -87,7 +84,6 @@
             this.BTN3.Size = new System.Drawing.Size(58, 57);
             this.BTN3.TabIndex = 2;
             this.BTN3.UseVisualStyleBackColor = false;
-            this.BTN3.Click += new System.EventHandler(this.BTN3_Click);
             // 
             // BTN4
             // 
@@ -271,7 +267,6 @@
             this.Controls.Add(this.BTN1);
             this.Name = "Phone";
             this.Text = "Phone";
-            this.Load += new System.EventHandler(this.Phone_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
