@@ -1,49 +1,85 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Linq;
 
 namespace C63.LudumDare31.Game
 {
-    public partial class Chat : Form
+    public partial class Chat : System.Windows.Forms.Form
     {
+        private System.Collections.Generic.Dictionary<System.Windows.Forms.LinkLabel, Data.Question> _Questions;
+
         public Chat()
         {
             InitializeComponent();
+
+            this._Questions = new System.Collections.Generic.Dictionary<System.Windows.Forms.LinkLabel, Data.Question>();
         }
 
-        private void Chat_Load(object sender, EventArgs e)
+        public void Clear()
         {
-
+            this.txtDialog.Text = "";
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        public void Add(string text)
         {
+            if (!System.String.IsNullOrEmpty(this.txtDialog.Text))
+            {
+                this.txtDialog.Text += System.Environment.NewLine;
+            }
 
+            this.txtDialog.Text += text;
+
+            C63.LudumDare31.Game.Extensions.ScrollToBottom(this.txtDialog);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void OnQuestion(object sender, System.EventArgs e)
         {
+            if(!(sender is System.Windows.Forms.LinkLabel))
+            {
+                return;
+            }
 
+            var linkLabel = (System.Windows.Forms.LinkLabel)sender;
+
+            if(!_Questions.ContainsKey(linkLabel))
+            {
+                return;
+            }
+
+            this.Add(linkLabel.Text);
+
+            Data.Question question = _Questions[linkLabel];
+
+            question.Ask();
+
+            this.Update();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public new void Update()
         {
+            this._Questions.Clear();
 
-        }
+            this.pnlQuestions.Controls.Clear();
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
+            Data.Question[] questions = Program.Phone.Line.Caller.Dialog.Questions.OrderBy(q => q.Asked).ToArray();
 
-        }
+            int y = 0;
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
+            foreach(var question in questions)
+            {
+                var link = new System.Windows.Forms.LinkLabel
+                {
+                    Dock = System.Windows.Forms.DockStyle.Top,
+                    Text = question.Dialog,
+                    Top = y,
+                };
 
+                link.Click += this.OnQuestion;
+
+                y += link.Height;
+
+                this.pnlQuestions.Controls.Add(link);
+
+                this._Questions.Add(link, question);
+            }
         }
     }
 }

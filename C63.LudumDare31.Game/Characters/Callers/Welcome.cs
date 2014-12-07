@@ -2,9 +2,9 @@
 
 namespace C63.LudumDare31.Game.Characters.Callers
 {
-    public class Example : Base
+    public class Welcome : Base
     {
-        public Example()
+        public Welcome()
             : base()
         {
 

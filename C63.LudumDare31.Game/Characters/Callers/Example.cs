@@ -11,13 +11,13 @@ namespace C63.LudumDare31.Game.Characters.Callers
 
             this.Dialog.Add
             (
-                new Question(() => "..?"),
+                new Question("..?"),
                 new Answer(() => "..!")
             );
 
             this.Dialog.Add
             (
-                () => "..?",
+                "..?",
                 () => "..!"
             );
 

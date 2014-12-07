@@ -2,19 +2,28 @@
 {
     public class Question
     {
-        public Question(System.Func<string> dialog)
+        public event System.Action<Question> OnAsk;
+
+        public Question(params string[] dialog)
         {
             if (dialog == null)
             {
                 throw new System.ArgumentNullException("dialog");
             }
 
-            this.Dialog = dialog;
+            this.Dialog = System.String.Join(System.Environment.NewLine, dialog);
         }
 
-        public Question(params string[] dialog)
-            : this(() => System.String.Join(System.Environment.NewLine, dialog))
+        public void Ask()
         {
+            this.Asked++;
+
+            if(this.OnAsk == null)
+            {
+                return;
+            }
+
+            this.OnAsk(this);
         }
 
         public byte Asked
@@ -23,7 +32,7 @@
             set;
         }
 
-        public System.Func<string> Dialog
+        public string Dialog
         {
             get;
             private set;

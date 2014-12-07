@@ -12,7 +12,9 @@ namespace C63.LudumDare31.Game
             PinkSlip = new PinkSlip();
             Notepad = new Notepad();
 
+            PinkSlip.Show();
             Phone.Show();
+            Notepad.Show();
         }
 
         static void Main()
@@ -32,6 +34,10 @@ namespace C63.LudumDare31.Game
             System.Console.Write('\t');
             System.Console.Write('\t');
             System.Console.WriteLine("& Friends");
+            System.Console.WriteLine();
+            System.Console.WriteLine();
+
+            Game.Initialize();
 
             Application.Run();
         }

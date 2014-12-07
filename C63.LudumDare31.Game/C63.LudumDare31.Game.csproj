@@ -33,18 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="Data\App.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Characters\Base.cs" />
     <Compile Include="Characters\Boss.cs" />
+    <Compile Include="Characters\Callers\Four20.cs" />
     <Compile Include="Characters\Callers\Base.cs" />
     <Compile Include="Characters\Callers\Example.cs" />
+    <Compile Include="Characters\Callers\FAA.cs" />
+    <Compile Include="Characters\Callers\IntroDuckTion.cs" />
+    <Compile Include="Characters\Callers\RoboCaller.cs" />
+    <Compile Include="Characters\Callers\SantaIntro.cs" />
+    <Compile Include="Characters\Callers\Welcome.cs" />
     <Compile Include="Characters\Callers\MumuhClaws.cs" />
     <Compile Include="Chat.cs">
       <SubType>Form</SubType>
@@ -52,30 +54,37 @@
     <Compile Include="Chat.Designer.cs">
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Extensions.cs" />
     <Compile Include="Data\Answer.cs" />
     <Compile Include="Data\Dialog.cs" />
     <Compile Include="Data\Emotions.cs" />
+    <Compile Include="Data\Line.cs" />
     <Compile Include="Data\Question.cs" />
-    <Compile Include="PinkSlip.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PinkSlip.Designer.cs">
-      <DependentUpon>PinkSlip.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Game.cs" />
     <Compile Include="Notepad.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Notepad.Designer.cs">
       <DependentUpon>Notepad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Game.cs" />
     <Compile Include="Phone.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Phone.Designer.cs">
       <DependentUpon>Phone.cs</DependentUpon>
     </Compile>
+    <Compile Include="PinkSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PinkSlip.Designer.cs">
+      <DependentUpon>PinkSlip.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -93,17 +102,20 @@
     <EmbeddedResource Include="Chat.resx">
       <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PinkSlip.resx">
-      <DependentUpon>PinkSlip.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Notepad.resx">
       <DependentUpon>Notepad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Phone.resx">
       <DependentUpon>Phone.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PinkSlip.resx">
+      <DependentUpon>PinkSlip.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Audio\Buttons\0.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

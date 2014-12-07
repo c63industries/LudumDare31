@@ -10,6 +10,7 @@
             : base()
         {
             this.Dialog = new Data.Dialog();
+            this.Number = "(???) ???-????";
         }
 
         public void Button(char button)
@@ -32,6 +33,8 @@
         {
             this.Calls++;
             this.Connected = true;
+
+            System.Console.WriteLine("{0} is connected.", this);
 
             if (this.OnConnect == null)
             {
@@ -57,12 +60,25 @@
         {
             this.Connected = false;
 
+            System.Console.WriteLine("{0} is disconnected.", this);
+
             if (this.OnDiconnect == null)
             {
                 return;
             }
 
             this.OnDiconnect();
+        }
+
+        public string Number
+        {
+            get;
+            protected set;
+        }
+
+        public override string ToString()
+        {
+            return "Caller";
         }
     }
 }
