@@ -33,10 +33,13 @@
             // 
             // NTPTXT1
             // 
-            this.NTPTXT1.Location = new System.Drawing.Point(4, 4);
+            this.NTPTXT1.BackColor = System.Drawing.SystemColors.Info;
+            this.NTPTXT1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NTPTXT1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NTPTXT1.Location = new System.Drawing.Point(0, 0);
             this.NTPTXT1.Multiline = true;
             this.NTPTXT1.Name = "NTPTXT1";
-            this.NTPTXT1.Size = new System.Drawing.Size(338, 302);
+            this.NTPTXT1.Size = new System.Drawing.Size(341, 303);
             this.NTPTXT1.TabIndex = 0;
             this.NTPTXT1.Text = "Put your words here.";
             // 
@@ -45,8 +48,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 303);
+            this.ControlBox = false;
             this.Controls.Add(this.NTPTXT1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Notepad";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Notepad";
             this.Load += new System.EventHandler(this.Notepad_Load);
             this.ResumeLayout(false);
