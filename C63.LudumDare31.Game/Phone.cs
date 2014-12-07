@@ -74,21 +74,6 @@ namespace C63.LudumDare31.Game
             this._Audio[button].Play();
         }
 
-<<<<<<< HEAD
-        private void BTN1_Click(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void BTN3_Click(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void Phone_Load(object sender, System.EventArgs e)
-        {
-
-=======
         private void OnLine(object sender, System.Windows.Forms.MouseEventArgs mouseEventArgs)
         {
             if (!(sender is System.Windows.Forms.Button))
@@ -120,7 +105,6 @@ namespace C63.LudumDare31.Game
             line.Caller.Connect();
 
             Program.Chat.Update();
->>>>>>> b1e6b9590f5f5ce7d3a2b74440a6dd8f4f3ce027
         }
     }
 }

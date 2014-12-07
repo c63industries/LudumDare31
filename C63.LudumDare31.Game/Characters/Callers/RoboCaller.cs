@@ -24,12 +24,14 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                     (
                                         "1",
                                         "Answer unacceptable. I must communicate with Santa Claws. To comply with this request, please press 1.",
-                                        ()=>
+                                        () =>
                                         {
 
                                         }
-                        )
-                }
+                                    );
+                            }
+                        );
+                    }
             );
         }
     }
