@@ -132,6 +132,11 @@ namespace C63.LudumDare31.Game.Data
 
         //
 
+        public void Clear()
+        {
+            this._Tree.Clear();
+        }
+
         private void OnAsk(Question question)
         {
             if(question == null)
@@ -159,6 +164,23 @@ namespace C63.LudumDare31.Game.Data
             get
             {
                 return this._Tree.Keys.ToArray();
+            }
+        }
+
+        public void Remove(params string[] dialog)
+        {
+            string key = System.String.Join(System.Environment.NewLine, dialog);
+
+            Question[] questions = this._Tree.Keys.Where(q => q.Dialog == key).ToArray();
+
+            if (questions.Length < 1)
+            {
+                return;
+            }
+
+            foreach (var question in questions)
+            {
+                this._Tree.Remove(question);
             }
         }
     }
