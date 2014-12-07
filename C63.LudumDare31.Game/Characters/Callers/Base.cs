@@ -10,6 +10,7 @@
             : base()
         {
             this.Dialog = new Data.Dialog();
+            this.Number = "(???) ???-????";
         }
 
         public void Button(char button)
@@ -67,6 +68,12 @@
             }
 
             this.OnDiconnect();
+        }
+
+        public string Number
+        {
+            get;
+            protected set;
         }
 
         public override string ToString()
