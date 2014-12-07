@@ -10,26 +10,25 @@ namespace C63.LudumDare31.Game
         {
             InitializeComponent();
 
-            this.AllowTransparency.
-
             this._Questions = new System.Collections.Generic.Dictionary<System.Windows.Forms.LinkLabel, Data.Question>();
         }
 
         public void Clear()
         {
-            this.txtDialog.Text = "";
+            this.txtDialog.Text = System.String.Empty;
         }
 
-        public void Add(string text)
+        public void Add(string text, System.Drawing.Color color)
         {
-            if (!System.String.IsNullOrEmpty(this.txtDialog.Text))
+            if(this.txtDialog.TextLength > 0)
             {
-                this.txtDialog.Text += System.Environment.NewLine;
+                this.txtDialog.AppendText(System.Environment.NewLine);
             }
 
-            this.txtDialog.Text += text;
+            this.txtDialog.SelectionColor = color;
+            this.txtDialog.AppendText(text);
 
-            C63.LudumDare31.Game.Extensions.ScrollToBottom(this.txtDialog);
+            Extensions.ScrollToBottom(this.txtDialog);
         }
 
         private void OnQuestion(object sender, System.EventArgs e)
@@ -46,7 +45,7 @@ namespace C63.LudumDare31.Game
                 return;
             }
 
-            this.Add(linkLabel.Text);
+            this.Add(linkLabel.Text, System.Drawing.Color.Red);
 
             Data.Question question = _Questions[linkLabel];
 
@@ -61,7 +60,7 @@ namespace C63.LudumDare31.Game
 
             this.pnlQuestions.Controls.Clear();
 
-            Data.Question[] questions = Program.Phone.Line.Caller.Dialog.Questions.OrderBy(q => q.Asked).ToArray();
+            Data.Question[] questions = Program.Phone.Line.Caller.Dialog.Questions.OrderByDescending(q => q.Asked).ToArray();
 
             int y = 0;
 
@@ -70,6 +69,7 @@ namespace C63.LudumDare31.Game
                 var link = new System.Windows.Forms.LinkLabel
                 {
                     Dock = System.Windows.Forms.DockStyle.Top,
+                    LinkColor = question.Asked > 0 ? System.Drawing.Color.DarkGray : System.Drawing.Color.Black,
                     Text = question.Dialog,
                     Top = y,
                 };
