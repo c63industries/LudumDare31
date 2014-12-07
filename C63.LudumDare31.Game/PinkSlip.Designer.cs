@@ -59,6 +59,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox PINKSLIP1;
+        protected System.Windows.Forms.RichTextBox PINKSLIP1;
+
     }
 }
