@@ -45,6 +45,7 @@
     <Compile Include="Characters\Boss.cs" />
     <Compile Include="Characters\Callers\Base.cs" />
     <Compile Include="Characters\Callers\Example.cs" />
+    <Compile Include="Characters\Callers\MumuhClaws.cs" />
     <Compile Include="Chat.cs">
       <SubType>Form</SubType>
     </Compile>
