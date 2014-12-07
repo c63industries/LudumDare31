@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Phone));
             this.BTN1 = new System.Windows.Forms.Button();
             this.BTN2 = new System.Windows.Forms.Button();
             this.BTN3 = new System.Windows.Forms.Button();
@@ -50,118 +51,143 @@
             // 
             // BTN1
             // 
-            this.BTN1.Location = new System.Drawing.Point(107, 55);
+            this.BTN1.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN1.BackgroundImage")));
+            this.BTN1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BTN1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTN1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTN1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.BTN1.Image = ((System.Drawing.Image)(resources.GetObject("BTN1.Image")));
+            this.BTN1.Location = new System.Drawing.Point(607, 87);
+            this.BTN1.Margin = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.BTN1.Name = "BTN1";
-            this.BTN1.Size = new System.Drawing.Size(20, 20);
+            this.BTN1.Size = new System.Drawing.Size(56, 57);
             this.BTN1.TabIndex = 0;
-            this.BTN1.Text = "1";
-            this.BTN1.UseVisualStyleBackColor = true;
+            this.BTN1.UseVisualStyleBackColor = false;
+            this.BTN1.Click += new System.EventHandler(this.BTN1_Click);
+            this.BTN1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MouseDown);
             // 
             // BTN2
             // 
-            this.BTN2.Location = new System.Drawing.Point(133, 55);
+            this.BTN2.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN2.Image = ((System.Drawing.Image)(resources.GetObject("BTN2.Image")));
+            this.BTN2.Location = new System.Drawing.Point(685, 87);
             this.BTN2.Name = "BTN2";
-            this.BTN2.Size = new System.Drawing.Size(20, 20);
+            this.BTN2.Size = new System.Drawing.Size(58, 57);
             this.BTN2.TabIndex = 1;
-            this.BTN2.Text = "2";
-            this.BTN2.UseVisualStyleBackColor = true;
+            this.BTN2.UseVisualStyleBackColor = false;
+            this.BTN2.Click += new System.EventHandler(this.BTN1_Click);
             // 
             // BTN3
             // 
-            this.BTN3.Location = new System.Drawing.Point(159, 55);
+            this.BTN3.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN3.Image = ((System.Drawing.Image)(resources.GetObject("BTN3.Image")));
+            this.BTN3.Location = new System.Drawing.Point(762, 87);
             this.BTN3.Name = "BTN3";
-            this.BTN3.Size = new System.Drawing.Size(20, 20);
+            this.BTN3.Size = new System.Drawing.Size(58, 57);
             this.BTN3.TabIndex = 2;
-            this.BTN3.Text = "3";
-            this.BTN3.UseVisualStyleBackColor = true;
+            this.BTN3.UseVisualStyleBackColor = false;
+            this.BTN3.Click += new System.EventHandler(this.BTN3_Click);
             // 
             // BTN4
             // 
-            this.BTN4.Location = new System.Drawing.Point(107, 81);
+            this.BTN4.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN4.Image = ((System.Drawing.Image)(resources.GetObject("BTN4.Image")));
+            this.BTN4.Location = new System.Drawing.Point(607, 151);
             this.BTN4.Name = "BTN4";
-            this.BTN4.Size = new System.Drawing.Size(20, 20);
+            this.BTN4.Size = new System.Drawing.Size(56, 56);
             this.BTN4.TabIndex = 3;
-            this.BTN4.Text = "4";
-            this.BTN4.UseVisualStyleBackColor = true;
+            this.BTN4.UseVisualStyleBackColor = false;
             // 
             // BTN5
             // 
-            this.BTN5.Location = new System.Drawing.Point(133, 81);
+            this.BTN5.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN5.Image = ((System.Drawing.Image)(resources.GetObject("BTN5.Image")));
+            this.BTN5.Location = new System.Drawing.Point(685, 150);
             this.BTN5.Name = "BTN5";
-            this.BTN5.Size = new System.Drawing.Size(20, 20);
+            this.BTN5.Size = new System.Drawing.Size(58, 56);
             this.BTN5.TabIndex = 4;
-            this.BTN5.Text = "5";
-            this.BTN5.UseVisualStyleBackColor = true;
+            this.BTN5.UseVisualStyleBackColor = false;
             // 
             // BTN6
             // 
-            this.BTN6.Location = new System.Drawing.Point(159, 81);
+            this.BTN6.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN6.BackgroundImage")));
+            this.BTN6.Location = new System.Drawing.Point(762, 150);
             this.BTN6.Name = "BTN6";
-            this.BTN6.Size = new System.Drawing.Size(20, 20);
+            this.BTN6.Size = new System.Drawing.Size(58, 56);
             this.BTN6.TabIndex = 5;
-            this.BTN6.Text = "6";
-            this.BTN6.UseVisualStyleBackColor = true;
+            this.BTN6.UseVisualStyleBackColor = false;
             // 
             // BTN7
             // 
-            this.BTN7.Location = new System.Drawing.Point(107, 107);
+            this.BTN7.Image = ((System.Drawing.Image)(resources.GetObject("BTN7.Image")));
+            this.BTN7.Location = new System.Drawing.Point(607, 212);
             this.BTN7.Name = "BTN7";
-            this.BTN7.Size = new System.Drawing.Size(20, 20);
+            this.BTN7.Size = new System.Drawing.Size(56, 52);
             this.BTN7.TabIndex = 6;
-            this.BTN7.Text = "7";
             this.BTN7.UseVisualStyleBackColor = true;
             // 
             // BTN8
             // 
-            this.BTN8.Location = new System.Drawing.Point(133, 107);
+            this.BTN8.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN8.Image = ((System.Drawing.Image)(resources.GetObject("BTN8.Image")));
+            this.BTN8.Location = new System.Drawing.Point(685, 212);
             this.BTN8.Name = "BTN8";
-            this.BTN8.Size = new System.Drawing.Size(20, 20);
+            this.BTN8.Size = new System.Drawing.Size(58, 52);
             this.BTN8.TabIndex = 7;
-            this.BTN8.Text = "8";
-            this.BTN8.UseVisualStyleBackColor = true;
+            this.BTN8.UseVisualStyleBackColor = false;
             // 
             // BTN9
             // 
-            this.BTN9.Location = new System.Drawing.Point(159, 107);
+            this.BTN9.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN9.Image = ((System.Drawing.Image)(resources.GetObject("BTN9.Image")));
+            this.BTN9.Location = new System.Drawing.Point(762, 212);
             this.BTN9.Name = "BTN9";
-            this.BTN9.Size = new System.Drawing.Size(20, 20);
+            this.BTN9.Size = new System.Drawing.Size(58, 52);
             this.BTN9.TabIndex = 8;
-            this.BTN9.Text = "9";
-            this.BTN9.UseVisualStyleBackColor = true;
+            this.BTN9.UseVisualStyleBackColor = false;
             // 
             // BTNAST
             // 
-            this.BTNAST.Location = new System.Drawing.Point(107, 133);
+            this.BTNAST.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTNAST.Image = ((System.Drawing.Image)(resources.GetObject("BTNAST.Image")));
+            this.BTNAST.Location = new System.Drawing.Point(607, 272);
             this.BTNAST.Name = "BTNAST";
-            this.BTNAST.Size = new System.Drawing.Size(20, 20);
+            this.BTNAST.Size = new System.Drawing.Size(56, 58);
             this.BTNAST.TabIndex = 9;
-            this.BTNAST.Text = "*";
-            this.BTNAST.UseVisualStyleBackColor = true;
+            this.BTNAST.UseVisualStyleBackColor = false;
             // 
             // BTN0
             // 
-            this.BTN0.Location = new System.Drawing.Point(133, 133);
+            this.BTN0.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN0.Image = ((System.Drawing.Image)(resources.GetObject("BTN0.Image")));
+            this.BTN0.Location = new System.Drawing.Point(685, 272);
             this.BTN0.Name = "BTN0";
-            this.BTN0.Size = new System.Drawing.Size(20, 20);
+            this.BTN0.Size = new System.Drawing.Size(58, 58);
             this.BTN0.TabIndex = 10;
-            this.BTN0.Text = "0";
-            this.BTN0.UseVisualStyleBackColor = true;
+            this.BTN0.UseVisualStyleBackColor = false;
             // 
             // BTNPOU
             // 
-            this.BTNPOU.Location = new System.Drawing.Point(159, 133);
+            this.BTNPOU.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTNPOU.Image = ((System.Drawing.Image)(resources.GetObject("BTNPOU.Image")));
+            this.BTNPOU.Location = new System.Drawing.Point(762, 272);
             this.BTNPOU.Name = "BTNPOU";
-            this.BTNPOU.Size = new System.Drawing.Size(20, 20);
+            this.BTNPOU.Size = new System.Drawing.Size(58, 58);
             this.BTNPOU.TabIndex = 11;
-            this.BTNPOU.Text = "#";
-            this.BTNPOU.UseVisualStyleBackColor = true;
+            this.BTNPOU.UseVisualStyleBackColor = false;
             // 
             // Line0
             // 
-            this.Line0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Line0.Location = new System.Drawing.Point(196, 47);
+            this.Line0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Line0.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Line0.BackgroundImage")));
+            this.Line0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Line0.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Line0.ForeColor = System.Drawing.Color.DarkRed;
+            this.Line0.Location = new System.Drawing.Point(847, 87);
             this.Line0.Name = "Line0";
-            this.Line0.Size = new System.Drawing.Size(66, 20);
+            this.Line0.Size = new System.Drawing.Size(78, 26);
             this.Line0.TabIndex = 12;
             this.Line0.Text = "Boss";
             this.Line0.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -169,36 +195,39 @@
             // 
             // BTNTRA
             // 
-            this.BTNTRA.Location = new System.Drawing.Point(30, 68);
+            this.BTNTRA.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNTRA.Location = new System.Drawing.Point(448, 87);
             this.BTNTRA.Name = "BTNTRA";
-            this.BTNTRA.Size = new System.Drawing.Size(57, 28);
+            this.BTNTRA.Size = new System.Drawing.Size(87, 28);
             this.BTNTRA.TabIndex = 18;
             this.BTNTRA.Text = "Transfer";
             this.BTNTRA.UseVisualStyleBackColor = true;
             // 
             // BTNCAL
             // 
-            this.BTNCAL.Location = new System.Drawing.Point(30, 125);
+            this.BTNCAL.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNCAL.Location = new System.Drawing.Point(448, 190);
             this.BTNCAL.Name = "BTNCAL";
-            this.BTNCAL.Size = new System.Drawing.Size(57, 25);
+            this.BTNCAL.Size = new System.Drawing.Size(87, 25);
             this.BTNCAL.TabIndex = 19;
             this.BTNCAL.Text = "Hold";
             this.BTNCAL.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(73, 21);
+            this.textBox1.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(659, 27);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 26);
+            this.textBox1.Size = new System.Drawing.Size(123, 28);
             this.textBox1.TabIndex = 20;
             this.textBox1.Text = "Caller ID";
             // 
             // Line1
             // 
-            this.Line1.Location = new System.Drawing.Point(196, 90);
+            this.Line1.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Line1.Location = new System.Drawing.Point(847, 151);
             this.Line1.Name = "Line1";
-            this.Line1.Size = new System.Drawing.Size(66, 20);
+            this.Line1.Size = new System.Drawing.Size(78, 24);
             this.Line1.TabIndex = 22;
             this.Line1.Text = "Line 1";
             this.Line1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -206,9 +235,10 @@
             // 
             // Line2
             // 
-            this.Line2.Location = new System.Drawing.Point(196, 130);
+            this.Line2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Line2.Location = new System.Drawing.Point(847, 224);
             this.Line2.Name = "Line2";
-            this.Line2.Size = new System.Drawing.Size(66, 20);
+            this.Line2.Size = new System.Drawing.Size(78, 23);
             this.Line2.TabIndex = 23;
             this.Line2.Text = "Line 2";
             this.Line2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -218,7 +248,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(948, 352);
             this.Controls.Add(this.Line2);
             this.Controls.Add(this.Line1);
             this.Controls.Add(this.textBox1);
@@ -239,6 +271,7 @@
             this.Controls.Add(this.BTN1);
             this.Name = "Phone";
             this.Text = "Phone";
+            this.Load += new System.EventHandler(this.Phone_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,7 +279,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button BTN1;
         private System.Windows.Forms.Button BTN2;
         private System.Windows.Forms.Button BTN3;
         private System.Windows.Forms.Button BTN4;
@@ -264,5 +296,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button Line1;
         private System.Windows.Forms.Button Line2;
+        private System.Windows.Forms.Button BTN1;
     }
 }

@@ -31,5 +31,20 @@
 
             this._Audio[button].Play();
         }
+
+        private void BTN1_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void BTN3_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void Phone_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
