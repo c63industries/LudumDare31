@@ -8,7 +8,12 @@ namespace C63.LudumDare31.Game
         {
             Boss = new Characters.Boss();
             Callers = new System.Collections.Generic.List<Characters.Callers.Base>();
-            Thread = new System.Threading.Thread(Loop);
+            Thread = new System.Threading.Thread(Loop)
+            {
+                IsBackground = true,
+                Name = "Game Loop",
+                Priority = System.Threading.ThreadPriority.Lowest,
+            };
         }
 
         static public Characters.Boss Boss
