@@ -7,14 +7,8 @@ namespace C63.LudumDare31.Game
     {
         static Program()
         {
-            Phone = new Phone();
-            Chat = new Chat();
-            PinkSlip = new PinkSlip();
-            Notepad = new Notepad();
-
-            PinkSlip.Show();
-            Phone.Show();
-            Notepad.Show();
+            Desktop = new Desktop();
+            Desktop.Show();
         }
 
         static void Main()
@@ -41,29 +35,43 @@ namespace C63.LudumDare31.Game
 
             Application.Run();
         }
-
-        static public Phone Phone
-        {
-            get;
-            private set;
-        }
         
         static public Chat Chat
         {
+            get
+            {
+                return Desktop.Chat;
+            }
+        }
+
+        static public Desktop Desktop
+        {
             get;
             private set;
         }
         
-        static public PinkSlip PinkSlip
+        static public Phone Phone
         {
-            get;
-            private set;
-        }
-        static public Notepad Notepad
-        {
-            get;
-            private set;
+            get
+            {
+                return Desktop.Phone;
+            }
         }
 
+        static public PinkSlip PinkSlip
+        {
+            get
+            {
+                return Desktop.PinkSlip;
+            }
+        }
+
+        static public Notepad Notepad
+        {
+            get
+            {
+                return Desktop.Notepad;
+            }
+        }
     }
 }
