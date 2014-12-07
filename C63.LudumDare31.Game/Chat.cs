@@ -26,6 +26,8 @@ namespace C63.LudumDare31.Game
             }
 
             this.txtDialog.Text += text;
+
+            C63.LudumDare31.Game.Extensions.ScrollToBottom(this.txtDialog);
         }
 
         private void OnQuestion(object sender, System.EventArgs e)
