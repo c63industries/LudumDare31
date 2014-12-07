@@ -4,19 +4,14 @@
     {
         public event System.Action<Question> OnAsk;
 
-        public Question(System.Func<string> dialog)
+        public Question(params string[] dialog)
         {
             if (dialog == null)
             {
                 throw new System.ArgumentNullException("dialog");
             }
 
-            this.Dialog = dialog;
-        }
-
-        public Question(params string[] dialog)
-            : this(() => System.String.Join(System.Environment.NewLine, dialog))
-        {
+            this.Dialog = System.String.Join(System.Environment.NewLine, dialog);
         }
 
         public void Ask()
@@ -37,7 +32,7 @@
             set;
         }
 
-        public System.Func<string> Dialog
+        public string Dialog
         {
             get;
             private set;

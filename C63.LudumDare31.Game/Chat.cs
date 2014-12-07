@@ -51,7 +51,7 @@ namespace C63.LudumDare31.Game
             this.Update();
         }
 
-        public void Update()
+        public new void Update()
         {
             this._Questions.Clear();
 
@@ -66,7 +66,7 @@ namespace C63.LudumDare31.Game
                 var link = new System.Windows.Forms.LinkLabel
                 {
                     Dock = System.Windows.Forms.DockStyle.Top,
-                    Text = question.Dialog(),
+                    Text = question.Dialog,
                     Top = y,
                 };
 
