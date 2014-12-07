@@ -1,4 +1,6 @@
-﻿namespace C63.LudumDare31.Game.Data
+﻿using System.Linq;
+
+namespace C63.LudumDare31.Game.Data
 {
     public class Dialog
     {
@@ -22,6 +24,8 @@
             {
                 throw new System.ArgumentNullException("answer");
             }
+
+            question.OnAsk += this.OnAsk;
 
             this._Tree.Add(question, answer);
         }
@@ -170,6 +174,38 @@
             else
             {
                 this.Add(new Question(question), new Answer(() => { action(); return answer; }));
+            }
+        }
+
+        //
+
+        private void OnAsk(Question question)
+        {
+            if(question == null)
+            {
+                return;
+            }
+
+            if(!this._Tree.ContainsKey(question))
+            {
+                return;
+            }
+
+            Answer answer = this._Tree[question];
+
+            if (answer == null)
+            {
+                return;
+            }
+
+            Program.Chat.Add(answer.Dialog());
+        }
+
+        public Question[] Questions
+        {
+            get
+            {
+                return this._Tree.Keys.ToArray();
             }
         }
     }

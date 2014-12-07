@@ -2,7 +2,7 @@
 
 namespace C63.LudumDare31.Game.Characters.Callers
 {
-    public class Example : Base
+    public class IntroDuckTion : Base
     {
         static public bool duckCall
         {
@@ -10,7 +10,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
             private set;
         }
 
-        public Example()
+        public IntroDuckTion()
             : base()
         {
 

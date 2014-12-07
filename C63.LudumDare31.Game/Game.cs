@@ -1,4 +1,4 @@
-﻿using System.Windows.Forms;
+﻿using System.Linq;
 
 namespace C63.LudumDare31.Game
 {
@@ -23,10 +23,32 @@ namespace C63.LudumDare31.Game
             private set;
         }
 
+        static public void Initialize()
+        {
+            Callers.Add(new Characters.Callers.Example());
+
+            Thread.Start();
+        }
+
         static void Loop()
         {
             while (true)
             {
+                var line = Program.Phone.Lines.Where(l => l.Caller == null).FirstOrDefault();
+
+                if(line == null)
+                {
+                    continue;
+                }
+
+                var callers = Callers.Where(c => Program.Phone.Lines.Where(l => l.Caller == c).Count() < 1).ToArray();
+
+                if (!callers.Any())
+                {
+                    continue;
+                }
+
+                line.Connect(callers.First());
             }
         }
 

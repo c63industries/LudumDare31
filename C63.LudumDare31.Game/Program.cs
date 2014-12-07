@@ -12,11 +12,33 @@ namespace C63.LudumDare31.Game
             PinkSlip = new PinkSlip();
             Notepad = new Notepad();
 
+            PinkSlip.Show();
             Phone.Show();
+            Notepad.Show();
         }
 
         static void Main()
         {
+            System.Console.WriteLine();
+            System.Console.WriteLine();
+            System.Console.Write('\t');
+            System.Console.WriteLine("Ludum Dare #31");
+            System.Console.WriteLine();
+            System.Console.Write('\t');
+            System.Console.WriteLine("Made By");
+            System.Console.WriteLine();
+            System.Console.Write('\t');
+            System.Console.Write('\t');
+            System.Console.WriteLine("C63 Industries");
+            System.Console.Write('\t');
+            System.Console.Write('\t');
+            System.Console.Write('\t');
+            System.Console.WriteLine("& Friends");
+            System.Console.WriteLine();
+            System.Console.WriteLine();
+
+            Game.Initialize();
+
             Application.Run();
         }
 
