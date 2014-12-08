@@ -55,5 +55,25 @@ namespace C63.LudumDare31.Game
 
             this._Audio[button].Play();
         }
+
+        private void BTNTRA_Click(object sender, System.EventArgs e)
+        {
+            if (this.Lines.Current == null)
+            {
+                return;
+            }
+
+            this.Lines.Current.Transfer();
+        }
+
+        private void BTNCAL_Click(object sender, System.EventArgs e)
+        {
+            if (this.Lines.Current == null)
+            {
+                return;
+            }
+
+            this.Lines.Current.Hold();
+        }
     }
 }
