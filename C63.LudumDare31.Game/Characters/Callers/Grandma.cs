@@ -2,9 +2,9 @@
 
 namespace C63.LudumDare31.Game.Characters.Callers
 {
-    public class Example : Base
+    public class Grandma : Base
     {
-        public Example()
+        public Grandma()
             : base()
         {
             this.Dialog.Add
