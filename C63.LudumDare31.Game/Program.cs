@@ -1,14 +1,11 @@
-﻿using System.Windows.Forms;
-
-namespace C63.LudumDare31.Game
+﻿namespace C63.LudumDare31.Game
 
 {
     static class Program
     {
         static Program()
         {
-            Desktop = new Desktop();
-            Desktop.Show();
+            Desktop = new Desktop();;
         }
 
         static void Main()
@@ -33,7 +30,7 @@ namespace C63.LudumDare31.Game
 
             Game.Initialize();
 
-            Application.Run();
+            System.Windows.Forms.Application.Run(Desktop);
         }
         
         static public Chat Chat
