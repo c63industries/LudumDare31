@@ -66,10 +66,14 @@
             // 
             // BTN2
             // 
-            this.BTN2.BackColor = System.Drawing.Color.DimGray;
+            this.BTN2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BTN2.BackColor = System.Drawing.Color.Khaki;
+            this.BTN2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BTN2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BTN2.Image = ((System.Drawing.Image)(resources.GetObject("BTN2.Image")));
             this.BTN2.Location = new System.Drawing.Point(237, 102);
+            this.BTN2.Margin = new System.Windows.Forms.Padding(0);
             this.BTN2.Name = "BTN2";
             this.BTN2.Size = new System.Drawing.Size(58, 57);
             this.BTN2.TabIndex = 1;
@@ -78,8 +82,10 @@
             // BTN3
             // 
             this.BTN3.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN3.Image = ((System.Drawing.Image)(resources.GetObject("BTN3.Image")));
             this.BTN3.Location = new System.Drawing.Point(321, 102);
+            this.BTN3.Margin = new System.Windows.Forms.Padding(0);
             this.BTN3.Name = "BTN3";
             this.BTN3.Size = new System.Drawing.Size(58, 57);
             this.BTN3.TabIndex = 2;
@@ -88,6 +94,7 @@
             // BTN4
             // 
             this.BTN4.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN4.Image = ((System.Drawing.Image)(resources.GetObject("BTN4.Image")));
             this.BTN4.Location = new System.Drawing.Point(157, 162);
             this.BTN4.Name = "BTN4";
@@ -98,6 +105,7 @@
             // BTN5
             // 
             this.BTN5.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN5.Image = ((System.Drawing.Image)(resources.GetObject("BTN5.Image")));
             this.BTN5.Location = new System.Drawing.Point(237, 165);
             this.BTN5.Name = "BTN5";
@@ -109,6 +117,7 @@
             // 
             this.BTN6.BackColor = System.Drawing.Color.DarkKhaki;
             this.BTN6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN6.BackgroundImage")));
+            this.BTN6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN6.Location = new System.Drawing.Point(321, 165);
             this.BTN6.Name = "BTN6";
             this.BTN6.Size = new System.Drawing.Size(58, 56);
@@ -117,6 +126,7 @@
             // 
             // BTN7
             // 
+            this.BTN7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN7.Image = ((System.Drawing.Image)(resources.GetObject("BTN7.Image")));
             this.BTN7.Location = new System.Drawing.Point(157, 224);
             this.BTN7.Name = "BTN7";
@@ -127,6 +137,7 @@
             // BTN8
             // 
             this.BTN8.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN8.Image = ((System.Drawing.Image)(resources.GetObject("BTN8.Image")));
             this.BTN8.Location = new System.Drawing.Point(237, 224);
             this.BTN8.Name = "BTN8";
@@ -137,6 +148,7 @@
             // BTN9
             // 
             this.BTN9.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN9.Image = ((System.Drawing.Image)(resources.GetObject("BTN9.Image")));
             this.BTN9.Location = new System.Drawing.Point(321, 224);
             this.BTN9.Name = "BTN9";
@@ -147,6 +159,7 @@
             // BTNAST
             // 
             this.BTNAST.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTNAST.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNAST.Image = ((System.Drawing.Image)(resources.GetObject("BTNAST.Image")));
             this.BTNAST.Location = new System.Drawing.Point(157, 282);
             this.BTNAST.Name = "BTNAST";
@@ -157,6 +170,7 @@
             // BTN0
             // 
             this.BTN0.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTN0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTN0.Image = ((System.Drawing.Image)(resources.GetObject("BTN0.Image")));
             this.BTN0.Location = new System.Drawing.Point(237, 282);
             this.BTN0.Name = "BTN0";
@@ -167,6 +181,7 @@
             // BTNPOU
             // 
             this.BTNPOU.BackColor = System.Drawing.Color.DarkKhaki;
+            this.BTNPOU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNPOU.Image = ((System.Drawing.Image)(resources.GetObject("BTNPOU.Image")));
             this.BTNPOU.Location = new System.Drawing.Point(321, 282);
             this.BTNPOU.Name = "BTNPOU";
@@ -191,26 +206,32 @@
             // 
             // BTNTRA
             // 
+            this.BTNTRA.BackColor = System.Drawing.Color.Khaki;
+            this.BTNTRA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNTRA.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNTRA.Location = new System.Drawing.Point(27, 131);
             this.BTNTRA.Name = "BTNTRA";
             this.BTNTRA.Size = new System.Drawing.Size(87, 28);
             this.BTNTRA.TabIndex = 18;
             this.BTNTRA.Text = "Transfer";
-            this.BTNTRA.UseVisualStyleBackColor = true;
+            this.BTNTRA.UseVisualStyleBackColor = false;
             // 
             // BTNCAL
             // 
+            this.BTNCAL.BackColor = System.Drawing.Color.Khaki;
+            this.BTNCAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNCAL.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCAL.Location = new System.Drawing.Point(27, 224);
             this.BTNCAL.Name = "BTNCAL";
             this.BTNCAL.Size = new System.Drawing.Size(87, 25);
             this.BTNCAL.TabIndex = 19;
             this.BTNCAL.Text = "Hold";
-            this.BTNCAL.UseVisualStyleBackColor = true;
+            this.BTNCAL.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.Color.Khaki;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(203, 46);
             this.textBox1.Name = "textBox1";
@@ -220,6 +241,8 @@
             // 
             // Line1
             // 
+            this.Line1.BackColor = System.Drawing.Color.Khaki;
+            this.Line1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Line1.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Line1.Location = new System.Drawing.Point(412, 194);
             this.Line1.Name = "Line1";
@@ -227,10 +250,12 @@
             this.Line1.TabIndex = 22;
             this.Line1.Text = "Line 1";
             this.Line1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Line1.UseVisualStyleBackColor = true;
+            this.Line1.UseVisualStyleBackColor = false;
             // 
             // Line2
             // 
+            this.Line2.BackColor = System.Drawing.Color.Khaki;
+            this.Line2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Line2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Line2.Location = new System.Drawing.Point(412, 270);
             this.Line2.Name = "Line2";
@@ -238,13 +263,14 @@
             this.Line2.TabIndex = 23;
             this.Line2.Text = "Line 2";
             this.Line2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Line2.UseVisualStyleBackColor = true;
+            this.Line2.UseVisualStyleBackColor = false;
             // 
             // Phone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(573, 352);
             this.Controls.Add(this.Line2);
             this.Controls.Add(this.Line1);
@@ -264,9 +290,11 @@
             this.Controls.Add(this.BTN3);
             this.Controls.Add(this.BTN2);
             this.Controls.Add(this.BTN1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Phone";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Phone";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Load += new System.EventHandler(this.Phone_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

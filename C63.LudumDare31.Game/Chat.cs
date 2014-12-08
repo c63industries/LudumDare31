@@ -10,7 +10,7 @@ namespace C63.LudumDare31.Game
         {
             InitializeComponent();
 
-            this.AllowTransparency.
+   
 
             this._Questions = new System.Collections.Generic.Dictionary<System.Windows.Forms.LinkLabel, Data.Question>();
         }
@@ -34,25 +34,7 @@ namespace C63.LudumDare31.Game
 
         private void OnQuestion(object sender, System.EventArgs e)
         {
-            if(!(sender is System.Windows.Forms.LinkLabel))
-            {
-                return;
-            }
 
-            var linkLabel = (System.Windows.Forms.LinkLabel)sender;
-
-            if(!_Questions.ContainsKey(linkLabel))
-            {
-                return;
-            }
-
-            this.Add(linkLabel.Text);
-
-            Data.Question question = _Questions[linkLabel];
-
-            question.Ask();
-
-            this.Update();
         }
 
         public new void Update()

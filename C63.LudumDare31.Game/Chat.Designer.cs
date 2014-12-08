@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chat));
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtDialog = new System.Windows.Forms.RichTextBox();
@@ -48,7 +49,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.84058F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.15942F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(427, 345);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(466, 308);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // txtDialog
@@ -57,7 +58,7 @@
             this.txtDialog.ForeColor = System.Drawing.Color.Olive;
             this.txtDialog.Location = new System.Drawing.Point(3, 3);
             this.txtDialog.Name = "txtDialog";
-            this.txtDialog.Size = new System.Drawing.Size(421, 128);
+            this.txtDialog.Size = new System.Drawing.Size(421, 113);
             this.txtDialog.TabIndex = 5;
             this.txtDialog.Tag = "";
             this.txtDialog.Text = "";
@@ -65,16 +66,18 @@
             // pnlQuestions
             // 
             this.pnlQuestions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlQuestions.Location = new System.Drawing.Point(3, 137);
+            this.pnlQuestions.Location = new System.Drawing.Point(3, 122);
             this.pnlQuestions.Name = "pnlQuestions";
-            this.pnlQuestions.Size = new System.Drawing.Size(421, 205);
+            this.pnlQuestions.Size = new System.Drawing.Size(460, 183);
             this.pnlQuestions.TabIndex = 6;
             // 
             // Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 345);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(466, 308);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Chat";
             this.Text = "Chat";
