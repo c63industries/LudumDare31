@@ -5,6 +5,7 @@
         public event System.Action<char> OnButton;
         public event System.Action OnConnect;
         public event System.Action<bool> OnDisconnect;
+        public event System.Action OnTransfer;
 
         public Base()
             : base()
@@ -83,9 +84,14 @@
             protected set;
         }
 
-        public override string ToString()
+        public void Transfer()
         {
-            return "Caller";
+            if (this.OnTransfer == null)
+            {
+                return;
+            }
+
+            this.OnTransfer();
         }
     }
 }

@@ -223,7 +223,6 @@
             // 
             this.BTNTRA.BackColor = System.Drawing.Color.Khaki;
             this.BTNTRA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTNTRA.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNTRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNTRA.Location = new System.Drawing.Point(27, 131);
             this.BTNTRA.Name = "BTNTRA";
@@ -231,12 +230,12 @@
             this.BTNTRA.TabIndex = 18;
             this.BTNTRA.Text = "Transfer";
             this.BTNTRA.UseVisualStyleBackColor = false;
+            this.BTNTRA.Click += new System.EventHandler(this.BTNTRA_Click);
             // 
             // BTNCAL
             // 
             this.BTNCAL.BackColor = System.Drawing.Color.Khaki;
             this.BTNCAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTNCAL.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCAL.Location = new System.Drawing.Point(27, 224);
             this.BTNCAL.Name = "BTNCAL";
@@ -244,12 +243,12 @@
             this.BTNCAL.TabIndex = 19;
             this.BTNCAL.Text = "Hold";
             this.BTNCAL.UseVisualStyleBackColor = false;
+            this.BTNCAL.Click += new System.EventHandler(this.BTNCAL_Click);
             // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Khaki;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(203, 46);
             this.textBox1.Name = "textBox1";
@@ -274,7 +273,6 @@
             // 
             this.Line2.BackColor = System.Drawing.Color.Khaki;
             this.Line2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Line2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Line2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Line2.Location = new System.Drawing.Point(412, 270);
             this.Line2.Name = "Line2";
@@ -507,9 +505,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackColor = System.Drawing.Color.Maroon;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(573, 352);
             this.ControlBox = false;
             this.Controls.Add(this.number7);
@@ -545,8 +542,8 @@
             this.Controls.Add(this.BTN3);
             this.Controls.Add(this.BTN2);
             this.Controls.Add(this.BTN1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Phone";

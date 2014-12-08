@@ -120,5 +120,22 @@
                 this.Hold();
             }
         }
+
+        public void Transfer()
+        {
+            this.Connected = false;
+            this.Holding = false;
+
+            if (this.Caller == null)
+            {
+                return;
+            }
+
+            this.Caller.Transfer();
+
+            this.Button.OnEvent(Form.Buttons.Line.Events.Incomming);
+
+            System.Console.WriteLine("{0} has been transfered.", this.Caller, this);
+        }
     }
 }
