@@ -46,7 +46,7 @@
     <Compile Include="Characters\Callers\GrandmaPI.cs" />
     <Compile Include="Characters\Callers\IntroDuckTion.cs" />
     <Compile Include="Characters\Callers\LaborRep.cs" />
-    <Compile Include="Characters\Callers\SantaIntro.cs" />
+    <Compile Include="Characters\Callers\Santa.cs" />
     <Compile Include="Characters\Callers\Welcome.cs" />
     <Compile Include="Chat.cs">
       <SubType>Form</SubType>
@@ -55,6 +55,7 @@
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
     <Compile Include="Collection\Lines.cs" />
+    <Compile Include="Data\Line.Boss.cs" />
     <Compile Include="Desktop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,7 +68,7 @@
     <Compile Include="Data\Emotions.cs" />
     <Compile Include="Data\Line.cs" />
     <Compile Include="Data\Question.cs" />
-    <Compile Include="Form\Buttons\BossLine.cs">
+    <Compile Include="Form\Buttons\Line.Boss.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Form\Buttons\Line.cs">

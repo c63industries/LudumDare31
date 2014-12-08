@@ -4,12 +4,11 @@ namespace C63.LudumDare31.Game.Characters.Callers
 {
     public class IntroDuckTion : Base
     {
-        public static IntroDuckTion duckHappiness;
-
         public IntroDuckTion()
             : base()
         {
-            duckHappiness = this;
+            this.OnTransfer += this.Transferred;
+            this.OnDisconnect += this.Disconnected;
 
             this.Dialog.Add
             (
@@ -73,6 +72,23 @@ namespace C63.LudumDare31.Game.Characters.Callers
                 }
 
             );
+        }
+
+        void Disconnected(bool hold)
+        {
+            if(hold)
+            {
+                return;
+            }
+
+            Game.Callers.Remove(this);
+            Game.Boss.OnDuck(false);
+        }
+
+        void Transferred()
+        {
+            Game.Callers.Remove(this);
+            Game.Boss.OnDuck(true);
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace C63.LudumDare31.Game.Form.Buttons
 {
-    public class Line : System.Windows.Forms.Control
+    public partial class Line : System.Windows.Forms.Control
     {
         public new enum Events
         {
@@ -73,12 +73,12 @@ namespace C63.LudumDare31.Game.Form.Buttons
                 return;
             }
 
-            if (Game.Random.Next(0, 10) > 0)
+            if (Game.Random.Next(0, 2) > 0)
             {
                 return;
             }
 
-            var callers = Game.Callers.Where(c => Program.Phone.Lines.Where(l => l.Caller == c).Count() < 1).ToArray();
+            var callers = Game.Callers.Where(c => Program.Phone.Lines.Find(c) == null).ToArray();
 
             if (!callers.Any())
             {

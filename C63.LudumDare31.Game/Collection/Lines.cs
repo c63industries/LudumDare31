@@ -30,5 +30,20 @@
                 this.OnChanged();
             }
         }
+
+        public Data.Line Find(Characters.Callers.Base caller)
+        {
+            foreach(var line in this)
+            {
+                if(line.Caller != caller)
+                {
+                    continue;
+                }
+
+                return line;
+            }
+
+            return null;
+        }
     }
 }
