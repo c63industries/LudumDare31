@@ -29,10 +29,14 @@
             private set;
         }
 
-        public void Connect()
+        public virtual void Connect()
         {
             this.Calls++;
             this.Connected = true;
+
+            Program.Chat.Clear();
+            Program.Chat.Show();
+            Program.Chat.Update();
 
             System.Console.WriteLine("{0} is connected.", this);
 
@@ -56,7 +60,7 @@
             private set;
         }
 
-        public void Disconnect()
+        public virtual void Disconnect()
         {
             this.Connected = false;
 
