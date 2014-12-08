@@ -8,6 +8,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
         public Santa()
             : base()
         {
+            this.OnConnect += this.Connected;
         }
 
         public void OnDuck(bool transfered)
@@ -30,7 +31,6 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                     () =>
                                     {
                                         this.Emotions.Happiness--;
-                                        this.Start();
                                     }
                                 );
                         }
@@ -89,13 +89,11 @@ namespace C63.LudumDare31.Game.Characters.Callers
             }
         }
 
-        private void Start()
+        private void Connected()
         {
-            //Game.Callers.Add(new Characters.Callers.FAA());
             Game.Callers.Add(new Characters.Callers.Four20());
             Game.Callers.Add(new Characters.Callers.Grandma());
             Game.Callers.Add(new Characters.Callers.LaborRep());
-            //Game.Callers.Add(new Characters.Callers.RoboCaller());
         }
     }
 }

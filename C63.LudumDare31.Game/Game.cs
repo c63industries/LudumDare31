@@ -41,10 +41,6 @@ namespace C63.LudumDare31.Game
         {
             Callers.Add(new Characters.Callers.Welcome());
 
-            Callers.Add(new Characters.Callers.Four20());
-            Callers.Add(new Characters.Callers.Grandma());
-            Callers.Add(new Characters.Callers.LaborRep());
-
             Thread.Start();
         }
 
