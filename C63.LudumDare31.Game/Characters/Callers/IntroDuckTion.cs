@@ -4,15 +4,12 @@ namespace C63.LudumDare31.Game.Characters.Callers
 {
     public class IntroDuckTion : Base
     {
-        static public bool duckCall
-        {
-            get;
-            private set;
-        }
+        public static IntroDuckTion duckHappiness;
 
         public IntroDuckTion()
             : base()
         {
+            duckHappiness = this;
 
             this.Dialog.Add
             (
@@ -45,7 +42,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                             "I have to hang up now.",
                                                             "Quackquackquack!",
 
-                                                            ()=> duckCall = false
+                                                            ()=> this.Emotions.Happiness--
                                                         );
                                                 }
                                             );
@@ -54,7 +51,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 "Okay, I'll put you through.",
                                                 "Quackquack.",
 
-                                                ()=> duckCall = true
+                                                () => this.Emotions.Happiness++
                                             );
                                     }
                                 );

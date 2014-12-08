@@ -5,11 +5,14 @@ namespace C63.LudumDare31.Game.Characters.Callers
 {
     public class SantaIntro : Base
     {
+        public static SantaIntro santaHappiness;
+
         public SantaIntro()
             : base()
         {
+            santaHappiness = this;
 
-            if (IntroDuckTion.duckCall == true)
+            if (IntroDuckTion.duckHappiness.Emotions.Happiness > 0)
             {
                 this.Dialog.Add
                     (
@@ -20,9 +23,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                 this.Dialog.Add
                                     (
                                         "Yes, sir!",
-                                        "Ya'll a lot better at this job than that last guy. Made everybody what callt us up mad with his \"Aaye!\" and \"Nam-mary\" kinder talk. Folks thought we was using some foreign call center and callt us un-Merican misers and said we ain't Christian. Really ruint the holiday -- I mean Christmas -- mood, you know what I'm sayin'?",
-                                        ()=>
-                                        {}
+                                        "Ya'll a lot better at this job than that last guy. Made everybody what callt us up mad with his elvie kinder talk. Folks thought we was using some foreign call center and callt us un-Merican misers and said we ain't Christian. Really ruint the holiday -- I mean Christmas -- mood, you know what I'm sayin'?"
                                     );
                                 this.Dialog.Add
                                     (
@@ -44,7 +45,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                         this.Dialog.Add
                                                             (
                                                                 "I thought my job was to tell you to kiss my frozen white ass.",
-                                                                "Well it's about to melt, because you gonna get fired!"
+                                                                "Well it's about to melt, because you gonna get fired!",
+                                                                ()=>
+                                                                    this.Emotions.Happiness--
                                                             );
                                                     }
                                                 );
@@ -64,15 +67,15 @@ namespace C63.LudumDare31.Game.Characters.Callers
                 this.Dialog.Add
                     (
                         "Hello, um... Santa?",
-                        "WHY DID SOME GOLLDANG DUCK CALL ME?!",
+                        "WHY DID SOME ANGRY DUCK CALL ME?!",
                         ()=>
                         {
                             this.Dialog.Add
                                 (
                                     "Did you not want that, or...?",
                                     "Ain't nobody can understand them! NO MORE DUCK CALLS!",
-                                    () =>
-                                    {}
+                                    ()=>
+                                        this.Emotions.Happiness--
                                 );
                         }
                      );

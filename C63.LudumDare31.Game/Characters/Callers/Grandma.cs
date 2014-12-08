@@ -4,9 +4,13 @@ namespace C63.LudumDare31.Game.Characters.Callers
 {
     public class Grandma : Base
     {
+        public static Grandma grandmaHappiness;
+
         public Grandma()
             : base()
         {
+            grandmaHappiness = this;
+
             this.Dialog.Add
                 (
                     "Thank you for calling the North Pole. How may I help you?",
@@ -32,8 +36,10 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 );
                                                 this.Dialog.Add
                                                     (
-                                                        "Maybe if you didn't sound like you ate two packs a day, he'd have time for you?",
-                                                        "I WANT TO SPEAK TO HIM RIGHT NOW! @"
+                                                        "Maybe if you didn't sound like you ate two packs a day, he'd want to talk to you?",
+                                                        "I WANT TO SPEAK TO HIM RIGHT NOW!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
@@ -51,7 +57,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "Oh my god. Ma'am, I'm done talking to an IDIOT like you.",
-                                                        "Good, because now that you're going to patch me through to my son, we'll be having a discussion about you. @"
+                                                        "Good, because now that you're going to patch me through to my son, we'll be having a discussion about you.",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
@@ -79,7 +87,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "He's paying me to answer his business calls. Not his personal calls.",
-                                                        "Listen here, Dobby! You patch me through right now! @"
+                                                        "Listen here, Dobby! You patch me through right now!"
                                                     );
                                                 this.Dialog.Add
                                                     (
@@ -110,7 +118,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                     this.Dialog.Add
                                                         (
                                                             "I'm not so sure that's politically correct to say that, ma'am.",
-                                                            "Your job isn't to be politically correct! It's to patch me through to my son. @"
+                                                            "Your job isn't to be politically correct! It's to patch me through to my son.",
+                                                            ()=>
+                                                                this.Emotions.Happiness--
                                                         );
                                                     this.Dialog.Add
                                                         (
@@ -128,7 +138,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "Ma'am. I'm just going to stop right there and patch you through.",
-                                                        "Well, fine! Have no manners and just cut off our conversation. See if I care!"
+                                                        "Well, fine! Have no manners and just cut off our conversation. See if I care!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
@@ -138,7 +150,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "Fair enough. I'll patch you through.",
-                                                        "Good. I'm starting to get bored with talking to you. @"
+                                                        "Good. I'm starting to get bored with talking to you.",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                             }
                                         );
@@ -151,7 +165,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "Yes, because I'm so lucky to get paid so little to patch people like you through.",
-                                                        "Oh, just wait until he hears about that comment! @"
+                                                        "Oh, just wait until he hears about that comment!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
@@ -182,12 +198,16 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "I'm sorry, ma'am. It was just a little joke.",
-                                                        "Well, it's not funny! Now patch me through to my son! @"
+                                                        "Well, it's not funny! Now patch me through to my son!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
                                                         "You just called us a week ago, ma'am.",
-                                                        "I'm calling him now because I haven't talked to him in six months! I want to talk to him NOW! @"
+                                                        "I'm calling him now because I haven't talked to him in six months! I want to talk to him NOW!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
@@ -205,7 +225,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "It's acceptable for us. Not for you.",
-                                                        "Just like it's acceptable for me to tell him to fire your cold white butt? @"
+                                                        "Just like it's acceptable for me to tell him to fire your cold white butt?",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
@@ -228,7 +250,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "Well, if asking for money for decent office supplies is greedy, then I'm so fired.",
-                                                        "You're damn right you will be after he hears this! @"
+                                                        "You're damn right you will be after he hears this!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (

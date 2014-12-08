@@ -2,11 +2,15 @@
 
 namespace C63.LudumDare31.Game.Characters.Callers
 {
-    public class Example : Base
+    public class GrandmaPI : Base
     {
-        public Example()
+        public static GrandmaPI piHappiness;
+
+        public GrandmaPI()
             : base()
         {
+            piHappiness = this;
+
             this.Dialog.Add
                 (
                 "Thank you for calling the North Pole. How can I help you today?",
@@ -16,7 +20,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                         this.Dialog.Add
                             (
                                 "May I ask who this is?",
-                                "How do you not know who I am?! I'm Nicholas's mother! @",
+                                "How do you not know who I am?! I'm Nicholas's mother!",
                                 ()=>
                                 {
                                     this.Dialog.Add
@@ -28,17 +32,23 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "I just had to double check. We know that they have some private investigator trying to get dirt on us.",
-                                                        "Oh, no! Well, then, patch me through to my son to see what's going on with him and the elves this time."
+                                                        "Oh, no! Well, then, patch me through to my son to see what's going on with him and the elves this time.",
+                                                        ()=>
+                                                            this.Emotions.Happiness++
                                                     );
                                                 this.Dialog.Add
                                                     (
                                                         "Really? Because you sound about as dumb as a box of them. A box of elves.",
-                                                        "That's it! I need to speak to my son right now! @"
+                                                        "That's it! I need to speak to my son right now!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
                                                         "I believe you, ma'am. You don't sound like one of those screechy little freaks.",
-                                                        "... Well, that's good. May I speak to my son?"
+                                                        "... Well, that's good. May I speak to my son?",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                             }
                                         );
@@ -51,12 +61,16 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                 this.Dialog.Add
                                                     (
                                                         "How do you know what their pay is?",
-                                                        "That's none of your business. Now let me talk to my son!"
+                                                        "That's none of your business. Now let me talk to my son!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
                                                         "Well, maybe if they actually worked around here, they would make better pay.",
-                                                        "I see. Well, if it's not inconvenient, I'd like to speak to my son."
+                                                        "I see. Well, if it's not inconvenient, I'd like to speak to my son.",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
@@ -68,23 +82,29 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                     this.Dialog.Add
                                         (
                                             "Sorry, you just sound like a loon. I guess the boss gets that from you.",
-                                            "WHAT IS THAT SUPPOSED TO MEAN?! @",
+                                            "WHAT IS THAT SUPPOSED TO MEAN?!",
                                             ()=>
                                             {
                                                 this.Dialog.Add
                                                     (
                                                         "Exactly what it sounds like. You sound like a fruitcake made with too many nuts.",
-                                                        "OKAY. I WANT TO TALK TO MY SON RIGHT NOW! @"
+                                                        "OKAY. I WANT TO TALK TO MY SON RIGHT NOW!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
                                                         "See, yelling doesn't make you sound less crazy.",
-                                                        "YOU'RE GOING TO REGRET SAYING THAT WHEN I TELL MY SON! @"
+                                                        "YOU'RE GOING TO REGRET SAYING THAT WHEN I TELL MY SON! AS A SNOWMAN, YOU DON'T KNOW HOW HARD IT IS BEING A GRANDMOTHER!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                                 this.Dialog.Add
                                                     (
                                                         "Oh, I'm sorry. Are you too stupid to know what a loon is? I can define that for you.",
-                                                        "YOU'RE GOING TO BE THE EXAMPLE FOR FIRED IN THE DICTIONARY WHEN I TELL MY SON! @"
+                                                        "YOU'RE GOING TO BE THE EXAMPLE FOR FIRED IN THE DICTIONARY WHEN I TELL MY SON!",
+                                                        ()=>
+                                                            this.Emotions.Happiness--
                                                     );
                                             }
                                         );
@@ -105,7 +125,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                         this.Dialog.Add
                                                             (
                                                                 "It's not that he hates elves. He just hates how they ask for equal pay.",
-                                                                "What?! I mean... I'M GOING TO TELL HIM YOU SAID THAT!"
+                                                                "What?! I mean... I'M GOING TO TELL HIM YOU SAID THAT!",
+                                                                ()=>
+                                                                    this.Emotions.Happiness--
                                                             );
                                                         this.Dialog.Add
                                                             (
@@ -115,7 +137,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                         this.Dialog.Add
                                                             (
                                                                 "I'm indeed a snowman, ma'am. I'll put you through.",
-                                                                "I knew it! And you won't even deny that he hates elves! I'm going to be talking about this."
+                                                                "I knew it! And you won't even deny that he hates elves! I'm going to be talking about this.",
+                                                                ()=>
+                                                                    this.Emotions.Happiness--
                                                             );
                                                     }
                                             );
@@ -133,18 +157,77 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                     this.Dialog.Add
                                                         (
                                                             "No, ma'am! I'm glad I'm not one of those pointy-ears.",
-                                                            "I see. Well, it's a darn good thing we're not, because of the horrible conditions that htey deal with! Now, if you could just patch me through."
+                                                            "I see. Well, it's a darn good thing we're not, because of the horrible conditions that they deal with! Now, if you could just patch me through."
                                                         );
                                                 }
+                                            );
+                                        this.Dialog.Add
+                                            (
+                                                "No, I'm not one of his slaves.",
+                                                "That's a lie! I know you're not an elf. I mean, I don't think you are.",
+                                                ()=>
+                                                    this.Emotions.Happiness--
                                             );
                                     }
                             );
                         this.Dialog.Add
                             (
                                 "I'm sorry, ma'am, but Adam Sandler doesn't work here.",
-                                "Not that idiot! I mean my son! @",
+                                "Not that idiot! I mean my son!",
                                 () =>
-                                { }
+                                {
+                                    this.Dialog.Add
+                                        (
+                                            "Your son is Adam Sandler? Are you Satan?",
+                                            "HOW DARE YOU SAY THAT TO YOUR ELDER?! I AM SANTA'S MOTHER!",
+                                            ()=>
+                                                this.Emotions.Happiness--
+                                        );
+                                    this.Dialog.Add
+                                        (
+                                            "I'm sorry, ma'am. That was a test.",
+                                            "A test for what? Why would you be suspicious?",
+                                            ()=>
+                                                {
+                                                    this.Dialog.Add
+                                                        (
+                                                            "A test to see if you were dumb enough to get angry at a dumb joke. Congratulations, you passed with flying colors.",
+                                                            "I will NOT tolerate that kind of behavior! I need to speak to Santa -- my son -- right now!",
+                                                            ()=>
+                                                                this.Emotions.Happiness--
+                                                        );
+                                                }
+                                        );
+                                    this.Dialog.Add
+                                        (
+                                            "I'm sorry, ma'am. He's always been Mr. Claws to me, so I keep forgetting that his name is Nicholas.",
+                                            "You sound like such a respectful young snowperson! Are your elf co-workers this respectful, too?",
+                                            ()=>
+                                                {
+                                                    this.Dialog.Add
+                                                        (
+                                                            "About as much as they can be for being so overworked and underpaid.",
+                                                            "Well, may I talk to Santa? I'd like to ask him why he even thinks that's appropriate to treat your fellows like that.",
+                                                            ()=>
+                                                                this.Emotions.Happiness++
+                                                        );
+                                                    this.Dialog.Add
+                                                        (
+                                                            "Yeah, they are pretty polite. Santa calls them bearded midgets, though.",
+                                                            "He does what?! Oh, that young man is going to get a lesson in manners from me!",
+                                                            ()=>
+                                                                this.Emotions.Happiness++
+                                                        );
+                                                    this.Dialog.Add
+                                                        (
+                                                            "About as respectful as a bunch of whiny hobbits can get.",
+                                                            "This is so offensive. Look, I need to talk to my son right now!",
+                                                            ()=>
+                                                                this.Emotions.Happiness--
+                                                        );
+                                                }
+                                        );
+                                }
                             );
                     }
         }
