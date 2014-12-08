@@ -44,6 +44,7 @@
     <Compile Include="Characters\Callers\Example.cs" />
     <Compile Include="Characters\Callers\Grandma.cs" />
     <Compile Include="Characters\Callers\GrandmaPI.cs" />
+    <Compile Include="Characters\Callers\HR.cs" />
     <Compile Include="Characters\Callers\IntroDuckTion.cs" />
     <Compile Include="Characters\Callers\LaborRep.cs" />
     <Compile Include="Characters\Callers\Santa.cs" />

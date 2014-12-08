@@ -83,5 +83,15 @@ namespace C63.LudumDare31.Game
                 this._Questions.Add(link, question);
             }
         }
+
+        private void txtDialog_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void pnlQuestions_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+
+        }
     }
 }

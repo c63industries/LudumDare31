@@ -166,7 +166,27 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                         "No, I'm not one of his slaves.",
                                         "That's a lie! I know you're not an elf. I mean, I don't think you are.",
                                         () =>
-                                            this.Emotions.Happiness--
+                                        {
+                                            this.Dialog.Add
+                                                (
+                                                    "You're right. The conditions they work in are atrocious. It was bad of me to make that joke.",
+                                                    "Yes, it was! Patch me through, but remember to never make that kind of joke again!",
+                                                    ()=>
+                                                        this.Emotions.Happiness++
+                                                );
+                                            this.Dialog.Add
+                                                (
+                                                    "Oh, so just because I'm a snowman, that manes that I'm not forced to work in inhumane conditions?",
+                                                    "That's not what I meant. What I meant to say was... just patch me through to my son, please."
+                                                );
+                                            this.Dialog.Add
+                                                (
+                                                    "With the wages I get paid? You might as well call it slave labor.",
+                                                    "Well... maybe you won't be doing anymore labor if he hears about this!",
+                                                    ()=>
+                                                        this.Emotions.Happiness--
+                                                );
+                                        }
                                     );
                             }
                         );
@@ -181,14 +201,44 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                         "Your son is Adam Sandler? Are you Satan?",
                                         "HOW DARE YOU SAY THAT TO YOUR ELDER?! I AM SANTA'S MOTHER!",
                                         () =>
-                                            this.Emotions.Happiness--
+                                        {
+                                            this.Dialog.Add
+                                                (
+                                                    "From the way the boss talks about you? I couldn't tell the difference.",
+                                                    "I'm sure you're going to be fired when my son hears this.",
+                                                    ()=>
+                                                        this.Emotions.Happiness--
+                                                );
+                                            this.Dialog.Add
+                                                (
+                                                    "Oh, I'm sorry, ma'am. I'm new and didn't quite recognize you. Here, let me put you through.",
+                                                    "Just don't let it happen again, son."
+                                                );
+                                            this.Dialog.Add
+                                                (
+                                                    "Oh, I'm sorry, ma'am. I thought you were making a reference to that movie.",
+                                                    "No, I hate it! Now put me through to my son!",
+                                                    ()=>
+                                                        this.Emotions.Happiness--
+                                                );
+                                        }
                                     );
                                 this.Dialog.Add
                                     (
                                         "I'm sorry, ma'am. That was a test.",
-                                        "A test for what? Why would you be suspicious?",
+                                        "A test for what? Why would you be suspicious? Is he avoiding Mrs. Claws?",
                                         () =>
                                         {
+                                            this.Dialog.Add
+                                                (
+                                                    "Just a test to make sure it's an important call.",
+                                                    "Well, I'd say a call from your mother is important! So if you would just be a dear and let me talk to my son."
+                                                );
+                                            this.Dialog.Add
+                                                (
+                                                    "I know how to screen for Mrs. Claws. She just makes odd sounds into the phone. It's the private investigators that the elves have hired that give us trouble.",
+                                                    "Oh, my goodness! My son never told me about that! I need to talk to him about this at once."
+                                                );
                                             this.Dialog.Add
                                                 (
                                                     "A test to see if you were dumb enough to get angry at a dumb joke. Congratulations, you passed with flying colors.",
