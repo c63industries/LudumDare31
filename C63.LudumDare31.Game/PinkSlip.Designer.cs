@@ -35,13 +35,13 @@
             // PINKSLIP1
             // 
             this.PINKSLIP1.BackColor = System.Drawing.Color.HotPink;
-            this.PINKSLIP1.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PINKSLIP1.Location = new System.Drawing.Point(-1, -6);
+            this.PINKSLIP1.Font = new System.Drawing.Font("Buxton Sketch", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PINKSLIP1.Location = new System.Drawing.Point(-1, 0);
             this.PINKSLIP1.Name = "PINKSLIP1";
-            this.PINKSLIP1.Size = new System.Drawing.Size(304, 261);
+            this.PINKSLIP1.Size = new System.Drawing.Size(378, 369);
             this.PINKSLIP1.TabIndex = 0;
-            this.PINKSLIP1.Text = "                                  Your Fired\n\n__  Warning (At Risk for Terminatio" +
-    "n)\n\n\n__  Notice of Termination\n\n";
+            this.PINKSLIP1.Text = resources.GetString("PINKSLIP1.Text");
+            this.PINKSLIP1.TextChanged += new System.EventHandler(this.PINKSLIP1_TextChanged);
             // 
             // PinkSlip
             // 
@@ -49,11 +49,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.HotPink;
-            this.ClientSize = new System.Drawing.Size(303, 267);
+            this.ClientSize = new System.Drawing.Size(376, 366);
             this.Controls.Add(this.PINKSLIP1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PinkSlip";
             this.Text = "Pink Slip";
+            this.Load += new System.EventHandler(this.PinkSlip_Load);
             this.ResumeLayout(false);
 
         }
