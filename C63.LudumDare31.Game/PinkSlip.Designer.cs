@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PinkSlip));
             this.PINKSLIP1 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // PINKSLIP1
@@ -43,6 +44,17 @@
             this.PINKSLIP1.Text = resources.GetString("PINKSLIP1.Text");
             this.PINKSLIP1.TextChanged += new System.EventHandler(this.PINKSLIP1_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Buxton Sketch", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(122, 301);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 46);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Reapply?";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // PinkSlip
             // 
             this.AccessibleName = "";
@@ -50,6 +62,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.HotPink;
             this.ClientSize = new System.Drawing.Size(376, 366);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.PINKSLIP1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PinkSlip";
@@ -62,6 +75,7 @@
         #endregion
 
         protected System.Windows.Forms.RichTextBox PINKSLIP1;
+        private System.Windows.Forms.Button button1;
 
     }
 }
