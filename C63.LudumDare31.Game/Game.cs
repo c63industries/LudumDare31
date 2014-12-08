@@ -37,6 +37,15 @@ namespace C63.LudumDare31.Game
             private set;
         }
 
+        static public void End()
+        {
+            Program.Chat.Hide();
+            Program.Notepad.Hide();
+            Program.Phone.Hide();
+
+            Program.PinkSlip.Show();
+        }
+
         static public void Initialize()
         {
             Callers.Add(new Characters.Callers.Welcome());
@@ -65,6 +74,15 @@ namespace C63.LudumDare31.Game
         {
             get;
             private set;
+        }
+
+        static public void Start()
+        {
+            Program.Chat.Show();
+            Program.Notepad.Show();
+            Program.Phone.Show();
+
+            Program.PinkSlip.Hide();
         }
 
         static public System.Threading.Thread Thread
