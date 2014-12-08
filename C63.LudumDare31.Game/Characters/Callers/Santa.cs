@@ -9,6 +9,15 @@ namespace C63.LudumDare31.Game.Characters.Callers
             : base()
         {
             this.OnConnect += this.Connected;
+
+            this.Emotions.OnHappiness += this.OnHappiness;
+        }
+
+        private new void Connected()
+        {
+            Game.Callers.Add(new Characters.Callers.Four20());
+            Game.Callers.Add(new Characters.Callers.Grandma());
+            Game.Callers.Add(new Characters.Callers.LaborRep());
         }
 
         public void OnDuck(bool transfered)
@@ -89,11 +98,14 @@ namespace C63.LudumDare31.Game.Characters.Callers
             }
         }
 
-        private void Connected()
+        void OnHappiness(sbyte value)
         {
-            Game.Callers.Add(new Characters.Callers.Four20());
-            Game.Callers.Add(new Characters.Callers.Grandma());
-            Game.Callers.Add(new Characters.Callers.LaborRep());
+            if (value > -3)
+            {
+                return;
+            }
+
+            Game.End();
         }
     }
 }
