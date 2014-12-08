@@ -285,5 +285,10 @@ namespace C63.LudumDare31.Game.Characters.Callers
                     }
                 );
         }
+
+        void Transferred()
+        {
+            Game.Boss.Emotions.Happiness--;
+        }
     }
 }

@@ -282,5 +282,20 @@ namespace C63.LudumDare31.Game.Characters.Callers
                 }
             );
         }
+
+        void Disconnected(bool hold)
+        {
+            if (hold)
+            {
+                return;
+            }
+
+            Game.Boss.Emotions.Happiness++;
+        }
+
+        void Transferred()
+        {
+            Game.Boss.Emotions.Happiness--;
+        }
     }
 }
