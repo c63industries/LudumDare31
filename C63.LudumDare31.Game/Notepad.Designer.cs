@@ -60,7 +60,6 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Notepad";
-            this.Load += new System.EventHandler(this.Notepad_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -156,7 +156,7 @@ namespace C63.LudumDare31.Game.Data
                 return;
             }
 
-            Program.Chat.Add(answer.Dialog());
+            Program.Chat.Add(answer.Dialog(), System.Drawing.Color.Blue);
         }
 
         public Question[] Questions

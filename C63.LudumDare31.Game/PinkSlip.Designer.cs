@@ -42,7 +42,6 @@
             this.PINKSLIP1.TabIndex = 0;
             this.PINKSLIP1.Text = "                                  Your Fired\n\n__  Warning (At Risk for Terminatio" +
     "n)\n\n\n__  Notice of Termination\n\n";
-            this.PINKSLIP1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // PinkSlip
             // 
@@ -55,7 +54,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PinkSlip";
             this.Text = "Pink Slip";
-            this.Load += new System.EventHandler(this.PinkSlip_Load);
             this.ResumeLayout(false);
 
         }

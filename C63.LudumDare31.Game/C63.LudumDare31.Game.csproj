@@ -44,6 +44,7 @@
     <Compile Include="Characters\Callers\Example.cs" />
     <Compile Include="Characters\Callers\FAA.cs" />
     <Compile Include="Characters\Callers\Grandma.cs" />
+    <Compile Include="Characters\Callers\GrandmaPI.cs" />
     <Compile Include="Characters\Callers\IntroDuckTion.cs" />
     <Compile Include="Characters\Callers\LaborRep.cs" />
     <Compile Include="Characters\Callers\RoboCaller.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Chat.Designer.cs">
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Collection\Lines.cs" />
     <Compile Include="Desktop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +69,15 @@
     <Compile Include="Data\Emotions.cs" />
     <Compile Include="Data\Line.cs" />
     <Compile Include="Data\Question.cs" />
+    <Compile Include="Form\Buttons\BossLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\Buttons\Line.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\Buttons\Number.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Game.cs" />
     <Compile Include="Notepad.cs">
       <SubType>Form</SubType>
@@ -158,8 +169,6 @@
     <Content Include="Audio\Buttons\star.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -47,6 +47,21 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Line1 = new System.Windows.Forms.Button();
             this.Line2 = new System.Windows.Forms.Button();
+            this.line4 = new C63.LudumDare31.Game.Form.Buttons.Line();
+            this.line5 = new C63.LudumDare31.Game.Form.Buttons.Line();
+            this.bossLine1 = new C63.LudumDare31.Game.Form.Buttons.BossLine();
+            this.number1 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number2 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number3 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number4 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number5 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number6 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number7 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number8 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number9 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number10 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number11 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number12 = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.SuspendLayout();
             // 
             // BTN1
@@ -206,9 +221,13 @@
             // 
             // BTNTRA
             // 
+<<<<<<< HEAD
             this.BTNTRA.BackColor = System.Drawing.Color.Khaki;
             this.BTNTRA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNTRA.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.BTNTRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.BTNTRA.Location = new System.Drawing.Point(27, 131);
             this.BTNTRA.Name = "BTNTRA";
             this.BTNTRA.Size = new System.Drawing.Size(87, 28);
@@ -218,9 +237,13 @@
             // 
             // BTNCAL
             // 
+<<<<<<< HEAD
             this.BTNCAL.BackColor = System.Drawing.Color.Khaki;
             this.BTNCAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNCAL.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.BTNCAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.BTNCAL.Location = new System.Drawing.Point(27, 224);
             this.BTNCAL.Name = "BTNCAL";
             this.BTNCAL.Size = new System.Drawing.Size(87, 25);
@@ -230,12 +253,16 @@
             // 
             // textBox1
             // 
+<<<<<<< HEAD
             this.textBox1.BackColor = System.Drawing.Color.Khaki;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.textBox1.Location = new System.Drawing.Point(203, 46);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 28);
+            this.textBox1.Size = new System.Drawing.Size(123, 26);
             this.textBox1.TabIndex = 20;
             this.textBox1.Text = "Caller ID";
             // 
@@ -254,9 +281,13 @@
             // 
             // Line2
             // 
+<<<<<<< HEAD
             this.Line2.BackColor = System.Drawing.Color.Khaki;
             this.Line2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Line2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+=======
+            this.Line2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.Line2.Location = new System.Drawing.Point(412, 270);
             this.Line2.Name = "Line2";
             this.Line2.Size = new System.Drawing.Size(78, 23);
@@ -265,13 +296,252 @@
             this.Line2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Line2.UseVisualStyleBackColor = false;
             // 
+            // line4
+            // 
+            this.line4.BackColor = System.Drawing.Color.DarkGray;
+            this.line4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.line4.Image_Connected = null;
+            this.line4.Image_Disconnected = null;
+            this.line4.Image_Incomming = null;
+            this.line4.Location = new System.Drawing.Point(497, 194);
+            this.line4.Name = "line4";
+            this.line4.Size = new System.Drawing.Size(75, 23);
+            this.line4.TabIndex = 26;
+            this.line4.Text = "line4";
+            // 
+            // line5
+            // 
+            this.line5.BackColor = System.Drawing.Color.DarkGray;
+            this.line5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.line5.Image_Connected = null;
+            this.line5.Image_Disconnected = null;
+            this.line5.Image_Incomming = null;
+            this.line5.Location = new System.Drawing.Point(497, 270);
+            this.line5.Name = "line5";
+            this.line5.Size = new System.Drawing.Size(75, 23);
+            this.line5.TabIndex = 27;
+            this.line5.Text = "line5";
+            // 
+            // bossLine1
+            // 
+            this.bossLine1.BackColor = System.Drawing.Color.DarkGray;
+            this.bossLine1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bossLine1.Image_Connected = null;
+            this.bossLine1.Image_Disconnected = null;
+            this.bossLine1.Image_Incomming = null;
+            this.bossLine1.Location = new System.Drawing.Point(497, 118);
+            this.bossLine1.Name = "bossLine1";
+            this.bossLine1.Size = new System.Drawing.Size(75, 23);
+            this.bossLine1.TabIndex = 28;
+            this.bossLine1.Text = "bossLine1";
+            // 
+            // number1
+            // 
+            this.number1.Audio_MouseDown = null;
+            this.number1.BackColor = System.Drawing.Color.Black;
+            this.number1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number1.Character = '\0';
+            this.number1.ForeColor = System.Drawing.Color.White;
+            this.number1.Image_MouseDown = null;
+            this.number1.Image_MouseUp = null;
+            this.number1.Location = new System.Drawing.Point(13, 13);
+            this.number1.Name = "number1";
+            this.number1.Size = new System.Drawing.Size(24, 23);
+            this.number1.TabIndex = 29;
+            this.number1.Text = "number1";
+            // 
+            // number2
+            // 
+            this.number2.Audio_MouseDown = null;
+            this.number2.BackColor = System.Drawing.Color.Black;
+            this.number2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number2.Character = '\0';
+            this.number2.ForeColor = System.Drawing.Color.White;
+            this.number2.Image_MouseDown = null;
+            this.number2.Image_MouseUp = null;
+            this.number2.Location = new System.Drawing.Point(43, 13);
+            this.number2.Name = "number2";
+            this.number2.Size = new System.Drawing.Size(24, 23);
+            this.number2.TabIndex = 30;
+            this.number2.Text = "number2";
+            // 
+            // number3
+            // 
+            this.number3.Audio_MouseDown = null;
+            this.number3.BackColor = System.Drawing.Color.Black;
+            this.number3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number3.Character = '\0';
+            this.number3.ForeColor = System.Drawing.Color.White;
+            this.number3.Image_MouseDown = null;
+            this.number3.Image_MouseUp = null;
+            this.number3.Location = new System.Drawing.Point(73, 12);
+            this.number3.Name = "number3";
+            this.number3.Size = new System.Drawing.Size(24, 23);
+            this.number3.TabIndex = 31;
+            this.number3.Text = "number3";
+            // 
+            // number4
+            // 
+            this.number4.Audio_MouseDown = null;
+            this.number4.BackColor = System.Drawing.Color.Black;
+            this.number4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number4.Character = '\0';
+            this.number4.ForeColor = System.Drawing.Color.White;
+            this.number4.Image_MouseDown = null;
+            this.number4.Image_MouseUp = null;
+            this.number4.Location = new System.Drawing.Point(73, 41);
+            this.number4.Name = "number4";
+            this.number4.Size = new System.Drawing.Size(24, 23);
+            this.number4.TabIndex = 34;
+            this.number4.Text = "number4";
+            // 
+            // number5
+            // 
+            this.number5.Audio_MouseDown = null;
+            this.number5.BackColor = System.Drawing.Color.Black;
+            this.number5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number5.Character = '\0';
+            this.number5.ForeColor = System.Drawing.Color.White;
+            this.number5.Image_MouseDown = null;
+            this.number5.Image_MouseUp = null;
+            this.number5.Location = new System.Drawing.Point(43, 42);
+            this.number5.Name = "number5";
+            this.number5.Size = new System.Drawing.Size(24, 23);
+            this.number5.TabIndex = 33;
+            this.number5.Text = "number5";
+            // 
+            // number6
+            // 
+            this.number6.Audio_MouseDown = null;
+            this.number6.BackColor = System.Drawing.Color.Black;
+            this.number6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number6.Character = '\0';
+            this.number6.ForeColor = System.Drawing.Color.White;
+            this.number6.Image_MouseDown = null;
+            this.number6.Image_MouseUp = null;
+            this.number6.Location = new System.Drawing.Point(13, 42);
+            this.number6.Name = "number6";
+            this.number6.Size = new System.Drawing.Size(24, 23);
+            this.number6.TabIndex = 32;
+            this.number6.Text = "number6";
+            // 
+            // number7
+            // 
+            this.number7.Audio_MouseDown = null;
+            this.number7.BackColor = System.Drawing.Color.Black;
+            this.number7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number7.Character = '\0';
+            this.number7.ForeColor = System.Drawing.Color.White;
+            this.number7.Image_MouseDown = null;
+            this.number7.Image_MouseUp = null;
+            this.number7.Location = new System.Drawing.Point(73, 99);
+            this.number7.Name = "number7";
+            this.number7.Size = new System.Drawing.Size(24, 23);
+            this.number7.TabIndex = 40;
+            this.number7.Text = "number7";
+            // 
+            // number8
+            // 
+            this.number8.Audio_MouseDown = null;
+            this.number8.BackColor = System.Drawing.Color.Black;
+            this.number8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number8.Character = '\0';
+            this.number8.ForeColor = System.Drawing.Color.White;
+            this.number8.Image_MouseDown = null;
+            this.number8.Image_MouseUp = null;
+            this.number8.Location = new System.Drawing.Point(43, 100);
+            this.number8.Name = "number8";
+            this.number8.Size = new System.Drawing.Size(24, 23);
+            this.number8.TabIndex = 39;
+            this.number8.Text = "number8";
+            // 
+            // number9
+            // 
+            this.number9.Audio_MouseDown = null;
+            this.number9.BackColor = System.Drawing.Color.Black;
+            this.number9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number9.Character = '\0';
+            this.number9.ForeColor = System.Drawing.Color.White;
+            this.number9.Image_MouseDown = null;
+            this.number9.Image_MouseUp = null;
+            this.number9.Location = new System.Drawing.Point(13, 100);
+            this.number9.Name = "number9";
+            this.number9.Size = new System.Drawing.Size(24, 23);
+            this.number9.TabIndex = 38;
+            this.number9.Text = "number9";
+            // 
+            // number10
+            // 
+            this.number10.Audio_MouseDown = null;
+            this.number10.BackColor = System.Drawing.Color.Black;
+            this.number10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number10.Character = '\0';
+            this.number10.ForeColor = System.Drawing.Color.White;
+            this.number10.Image_MouseDown = null;
+            this.number10.Image_MouseUp = null;
+            this.number10.Location = new System.Drawing.Point(73, 70);
+            this.number10.Name = "number10";
+            this.number10.Size = new System.Drawing.Size(24, 23);
+            this.number10.TabIndex = 37;
+            this.number10.Text = "number10";
+            // 
+            // number11
+            // 
+            this.number11.Audio_MouseDown = null;
+            this.number11.BackColor = System.Drawing.Color.Black;
+            this.number11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number11.Character = '\0';
+            this.number11.ForeColor = System.Drawing.Color.White;
+            this.number11.Image_MouseDown = null;
+            this.number11.Image_MouseUp = null;
+            this.number11.Location = new System.Drawing.Point(43, 71);
+            this.number11.Name = "number11";
+            this.number11.Size = new System.Drawing.Size(24, 23);
+            this.number11.TabIndex = 36;
+            this.number11.Text = "number11";
+            // 
+            // number12
+            // 
+            this.number12.Audio_MouseDown = null;
+            this.number12.BackColor = System.Drawing.Color.Black;
+            this.number12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number12.Character = '\0';
+            this.number12.ForeColor = System.Drawing.Color.White;
+            this.number12.Image_MouseDown = null;
+            this.number12.Image_MouseUp = null;
+            this.number12.Location = new System.Drawing.Point(13, 71);
+            this.number12.Name = "number12";
+            this.number12.Size = new System.Drawing.Size(24, 23);
+            this.number12.TabIndex = 35;
+            this.number12.Text = "number12";
+            // 
             // Phone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+=======
+            this.BackColor = System.Drawing.Color.Maroon;
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.ClientSize = new System.Drawing.Size(573, 352);
+            this.ControlBox = false;
+            this.Controls.Add(this.number7);
+            this.Controls.Add(this.number8);
+            this.Controls.Add(this.number9);
+            this.Controls.Add(this.number10);
+            this.Controls.Add(this.number11);
+            this.Controls.Add(this.number12);
+            this.Controls.Add(this.number4);
+            this.Controls.Add(this.number5);
+            this.Controls.Add(this.number6);
+            this.Controls.Add(this.number3);
+            this.Controls.Add(this.number2);
+            this.Controls.Add(this.number1);
+            this.Controls.Add(this.bossLine1);
+            this.Controls.Add(this.line5);
+            this.Controls.Add(this.line4);
             this.Controls.Add(this.Line2);
             this.Controls.Add(this.Line1);
             this.Controls.Add(this.textBox1);
@@ -290,12 +560,22 @@
             this.Controls.Add(this.BTN3);
             this.Controls.Add(this.BTN2);
             this.Controls.Add(this.BTN1);
+<<<<<<< HEAD
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+=======
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.Name = "Phone";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phone";
+<<<<<<< HEAD
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Load += new System.EventHandler(this.Phone_Load);
+=======
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,5 +601,20 @@
         private System.Windows.Forms.Button Line1;
         private System.Windows.Forms.Button Line2;
         private System.Windows.Forms.Button BTN1;
+        private Form.Buttons.Line line4;
+        private Form.Buttons.Line line5;
+        private Form.Buttons.BossLine bossLine1;
+        private Form.Buttons.Number number1;
+        private Form.Buttons.Number number2;
+        private Form.Buttons.Number number3;
+        private Form.Buttons.Number number4;
+        private Form.Buttons.Number number5;
+        private Form.Buttons.Number number6;
+        private Form.Buttons.Number number7;
+        private Form.Buttons.Number number8;
+        private Form.Buttons.Number number9;
+        private Form.Buttons.Number number10;
+        private Form.Buttons.Number number11;
+        private Form.Buttons.Number number12;
     }
 }

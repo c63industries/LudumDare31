@@ -49,17 +49,32 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.84058F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.15942F));
+<<<<<<< HEAD
             this.tableLayoutPanel1.Size = new System.Drawing.Size(466, 308);
+=======
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(662, 345);
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // txtDialog
             // 
-            this.txtDialog.Dock = System.Windows.Forms.DockStyle.Left;
-            this.txtDialog.ForeColor = System.Drawing.Color.Olive;
+            this.txtDialog.BackColor = System.Drawing.Color.White;
+            this.txtDialog.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDialog.DetectUrls = false;
+            this.txtDialog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDialog.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDialog.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtDialog.Location = new System.Drawing.Point(3, 3);
             this.txtDialog.Name = "txtDialog";
+<<<<<<< HEAD
             this.txtDialog.Size = new System.Drawing.Size(421, 113);
             this.txtDialog.TabIndex = 5;
+=======
+            this.txtDialog.ReadOnly = true;
+            this.txtDialog.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.txtDialog.Size = new System.Drawing.Size(656, 128);
+            this.txtDialog.TabIndex = 1;
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.txtDialog.Tag = "";
             this.txtDialog.Text = "";
             // 
@@ -68,18 +83,30 @@
             this.pnlQuestions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlQuestions.Location = new System.Drawing.Point(3, 122);
             this.pnlQuestions.Name = "pnlQuestions";
+<<<<<<< HEAD
             this.pnlQuestions.Size = new System.Drawing.Size(460, 183);
+=======
+            this.pnlQuestions.Size = new System.Drawing.Size(656, 205);
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.pnlQuestions.TabIndex = 6;
             // 
             // Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(466, 308);
+=======
+            this.ClientSize = new System.Drawing.Size(662, 345);
+            this.ControlBox = false;
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Chat";
+            this.ShowInTaskbar = false;
             this.Text = "Chat";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
