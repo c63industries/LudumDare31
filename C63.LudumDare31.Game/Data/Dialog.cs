@@ -4,11 +4,11 @@ namespace C63.LudumDare31.Game.Data
 {
     public class Dialog
     {
-        public System.Collections.Generic.Dictionary<Question, Answer> _Tree;
+        public System.Collections.Generic.Stack<System.Collections.Generic.Dictionary<Question, Answer>> _Trees;
 
         public Dialog()
         {
-            this._Tree = new System.Collections.Generic.Dictionary<Question, Answer>();
+            this._Trees = new System.Collections.Generic.Stack<System.Collections.Generic.Dictionary<Question, Answer>>();
         }
 
         //
@@ -27,12 +27,12 @@ namespace C63.LudumDare31.Game.Data
 
             question.OnAsk += this.OnAsk;
 
-            if(this._Tree.Keys.Where(q => q.Dialog == question.Dialog).Any())
+            if(this.Tree.Keys.Where(q => q.Dialog == question.Dialog).Any())
             {
                 return;
             }
 
-            this._Tree.Add(question, answer);
+            this.Tree.Add(question, answer);
         }
 
         //
@@ -134,7 +134,7 @@ namespace C63.LudumDare31.Game.Data
 
         public void Clear()
         {
-            this._Tree.Clear();
+            this.Tree.Clear();
         }
 
         private void OnAsk(Question question)
@@ -144,12 +144,12 @@ namespace C63.LudumDare31.Game.Data
                 return;
             }
 
-            if(!this._Tree.ContainsKey(question))
+            if(!this.Tree.ContainsKey(question))
             {
                 return;
             }
 
-            Answer answer = this._Tree[question];
+            Answer answer = this.Tree[question];
 
             if (answer == null)
             {
@@ -159,19 +159,34 @@ namespace C63.LudumDare31.Game.Data
             Program.Chat.Add(answer.Dialog(), System.Drawing.Color.Blue);
         }
 
+        public void Pop()
+        {
+            this._Trees.Pop();
+        }
+
+        public void Push()
+        {
+            this._Trees.Push(new System.Collections.Generic.Dictionary<Question, Answer>());
+        }
+
         public Question[] Questions
         {
             get
             {
-                return this._Tree.Keys.ToArray();
+                return this.Tree.Keys.ToArray();
             }
         }
 
         public void Remove(params string[] dialog)
         {
+            if (this._Trees.Count < 1)
+            {
+                return;
+            }
+
             string key = System.String.Join(System.Environment.NewLine, dialog);
 
-            Question[] questions = this._Tree.Keys.Where(q => q.Dialog == key).ToArray();
+            Question[] questions = this.Tree.Keys.Where(q => q.Dialog == key).ToArray();
 
             if (questions.Length < 1)
             {
@@ -180,7 +195,20 @@ namespace C63.LudumDare31.Game.Data
 
             foreach (var question in questions)
             {
-                this._Tree.Remove(question);
+                this.Tree.Remove(question);
+            }
+        }
+
+        public System.Collections.Generic.Dictionary<Question, Answer> Tree
+        {
+            get
+            {
+                if (this._Trees.Count < 1)
+                {
+                    this.Push();
+                }
+
+                return this._Trees.Peek();
             }
         }
     }

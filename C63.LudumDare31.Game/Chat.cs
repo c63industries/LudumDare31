@@ -60,9 +60,12 @@ namespace C63.LudumDare31.Game
 
             this.pnlQuestions.Controls.Clear();
 
-            Data.Question[] questions = Program.Phone.Line.Caller.Dialog.Questions.OrderByDescending(q => q.Asked).ToArray();
+            if(Program.Phone.Lines.Current == null)
+            {
+                return;
+            }
 
-            int y = 0;
+            Data.Question[] questions = Program.Phone.Lines.Current.Caller.Dialog.Questions.OrderByDescending(q => q.Asked).ToArray();
 
             foreach(var question in questions)
             {
@@ -71,12 +74,9 @@ namespace C63.LudumDare31.Game
                     Dock = System.Windows.Forms.DockStyle.Top,
                     LinkColor = question.Asked > 0 ? System.Drawing.Color.DarkGray : System.Drawing.Color.Black,
                     Text = question.Dialog,
-                    Top = y,
                 };
 
                 link.Click += this.OnQuestion;
-
-                y += link.Height;
 
                 this.pnlQuestions.Controls.Add(link);
 

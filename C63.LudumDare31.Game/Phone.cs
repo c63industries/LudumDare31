@@ -5,13 +5,12 @@ namespace C63.LudumDare31.Game
     public partial class Phone : System.Windows.Forms.Form
     {
         private System.Collections.Generic.Dictionary<System.Windows.Forms.Button, System.Media.SoundPlayer> _Audio;
-        private System.Collections.Generic.Dictionary<System.Windows.Forms.Button, Data.Line> _Lines;
 
         public Phone()
         {
-            InitializeComponent();
+            this.Lines = new Collection.Lines();
 
-          
+            InitializeComponent();
 
             this._Audio = new System.Collections.Generic.Dictionary<System.Windows.Forms.Button, System.Media.SoundPlayer>();
 
@@ -32,28 +31,9 @@ namespace C63.LudumDare31.Game
             {
                 button.MouseDown += this.OnButton;
             }
-
-            this._Lines = new System.Collections.Generic.Dictionary<System.Windows.Forms.Button, Data.Line>();
-
-            this._Lines.Add(this.Line0, new Data.Line("Boss", System.Drawing.Color.Red));
-            this._Lines.Add(this.Line1, new Data.Line("Line 1"));
-            this._Lines.Add(this.Line2, new Data.Line("Line 2"));
-
-            foreach (var button in this._Lines.Keys)
-            {
-                button.MouseDown += this.OnLine;
-            }
-
-            this.Lines = this._Lines.Values.ToArray();
         }
 
-        public Data.Line Line
-        {
-            get;
-            private set;
-        }
-
-        public Data.Line[] Lines
+        public Collection.Lines Lines
         {
             get;
             private set;
@@ -76,42 +56,24 @@ namespace C63.LudumDare31.Game
             this._Audio[button].Play();
         }
 
-        private void OnLine(object sender, System.Windows.Forms.MouseEventArgs mouseEventArgs)
+        private void BTNTRA_Click(object sender, System.EventArgs e)
         {
-            if (!(sender is System.Windows.Forms.Button))
+            if (this.Lines.Current == null)
             {
                 return;
             }
 
-            var button = (System.Windows.Forms.Button)sender;
-
-            if (!this._Lines.ContainsKey(button))
-            {
-                return;
-            }
-
-            Data.Line line = this._Lines[button];
-
-            if(line.Caller == null)
-            {
-                return;
-            }
-
-            this.Line = line;
-
-            Program.Chat.Clear();
-            Program.Chat.Show();
-
-            System.Console.WriteLine("{0} is connecting on {1}.", this, line);
-
-            line.Caller.Connect();
-
-            Program.Chat.Update();
+            this.Lines.Current.Transfer();
         }
 
-        private void Phone_Load(object sender, System.EventArgs e)
+        private void BTNCAL_Click(object sender, System.EventArgs e)
         {
+            if (this.Lines.Current == null)
+            {
+                return;
+            }
 
+            this.Lines.Current.Hold();
         }
     }
 }
