@@ -50,6 +50,8 @@ namespace C63.LudumDare31.Game
             Data.Question question = _Questions[linkLabel];
 
             question.Ask();
+
+            this.Update();
         }
 
         public new void Update()
