@@ -4,6 +4,8 @@ namespace C63.LudumDare31.Game
 {
     static class Game
     {
+        static public event System.Action<ulong> OnCycle;
+
         static Game()
         {
             Boss = new Characters.Boss();
@@ -23,6 +25,12 @@ namespace C63.LudumDare31.Game
             private set;
         }
 
+        static public ulong Cycles
+        {
+            get;
+            private set;
+        }
+
         static public System.Collections.Generic.List<Characters.Callers.Base> Callers
         {
             get;
@@ -31,15 +39,15 @@ namespace C63.LudumDare31.Game
 
         static public void Initialize()
         {
-            Callers.Add(new Characters.Callers.Example());
+            Callers.Add(new Characters.Callers.Welcome());
+            Callers.Add(new Characters.Callers.IntroDuckTion());
+            Callers.Add(new Characters.Callers.SantaIntro());
+
             Callers.Add(new Characters.Callers.FAA());
             Callers.Add(new Characters.Callers.Four20());
             Callers.Add(new Characters.Callers.Grandma());
-            Callers.Add(new Characters.Callers.IntroDuckTion());
             Callers.Add(new Characters.Callers.LaborRep());
             Callers.Add(new Characters.Callers.RoboCaller());
-            Callers.Add(new Characters.Callers.SantaIntro());
-            Callers.Add(new Characters.Callers.Welcome());
 
             Thread.Start();
         }
@@ -48,23 +56,16 @@ namespace C63.LudumDare31.Game
         {
             while (true)
             {
-                var line = Program.Phone.Lines.Where(l => l.Caller == null).FirstOrDefault();
+                System.Threading.Thread.Sleep(1000);
 
-                if(line == null)
+                Cycles++;
+
+                if(OnCycle == null)
                 {
                     continue;
                 }
 
-                var callers = Callers.Where(c => Program.Phone.Lines.Where(l => l.Caller == c).Count() < 1).ToArray();
-
-                if (!callers.Any())
-                {
-                    continue;
-                }
-
-                int index = Random.Next(callers.Length);
-
-                line.Connect(callers[index]);
+                OnCycle(Cycles);
             }
         }
 

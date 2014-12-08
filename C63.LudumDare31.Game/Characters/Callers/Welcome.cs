@@ -7,6 +7,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
         public Welcome()
             : base()
         {
+            this.OnDisconnect += this.Disconnected;
 
             this.Dialog.Add
             (
@@ -15,12 +16,15 @@ namespace C63.LudumDare31.Game.Characters.Callers
             );
         }
 
-        public override void Disconnect()
+        void Disconnected(bool hold)
         {
+            if(hold)
+            {
+                return;
+            }
+
             Game.Callers.Remove(this);
             Game.Callers.Add(new Characters.Callers.IntroDuckTion());
-
-            base.Disconnect();
         }
     }
 }

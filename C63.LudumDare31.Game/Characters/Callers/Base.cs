@@ -4,7 +4,7 @@
     {
         public event System.Action<char> OnButton;
         public event System.Action OnConnect;
-        public event System.Action OnDiconnect;
+        public event System.Action<bool> OnDisconnect;
 
         public Base()
             : base()
@@ -60,18 +60,18 @@
             private set;
         }
 
-        public virtual void Disconnect()
+        public virtual void Disconnect(bool hold)
         {
             this.Connected = false;
 
-            System.Console.WriteLine("{0} is disconnected.", this);
+            System.Console.WriteLine("{0} is {1}.", this, hold ? "holding" : "disconnected");
 
-            if (this.OnDiconnect == null)
+            if (this.OnDisconnect == null)
             {
                 return;
             }
 
-            this.OnDiconnect();
+            this.OnDisconnect(hold);
         }
 
         public string Number
