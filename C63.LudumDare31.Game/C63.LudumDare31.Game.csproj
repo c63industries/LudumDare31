@@ -41,12 +41,10 @@
     <Compile Include="Characters\Callers\Four20.cs" />
     <Compile Include="Characters\Callers\Base.cs" />
     <Compile Include="Characters\Callers\Example.cs" />
-    <Compile Include="Characters\Callers\FAA.cs" />
     <Compile Include="Characters\Callers\Grandma.cs" />
     <Compile Include="Characters\Callers\GrandmaPI.cs" />
     <Compile Include="Characters\Callers\IntroDuckTion.cs" />
     <Compile Include="Characters\Callers\LaborRep.cs" />
-    <Compile Include="Characters\Callers\RoboCaller.cs" />
     <Compile Include="Characters\Callers\SantaIntro.cs" />
     <Compile Include="Characters\Callers\Welcome.cs" />
     <Compile Include="Chat.cs">
