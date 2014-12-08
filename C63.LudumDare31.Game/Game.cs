@@ -8,6 +8,7 @@ namespace C63.LudumDare31.Game
         {
             Boss = new Characters.Boss();
             Callers = new System.Collections.Generic.List<Characters.Callers.Base>();
+            Random = new System.Random();
             Thread = new System.Threading.Thread(Loop)
             {
                 IsBackground = true,
@@ -31,6 +32,14 @@ namespace C63.LudumDare31.Game
         static public void Initialize()
         {
             Callers.Add(new Characters.Callers.Example());
+            Callers.Add(new Characters.Callers.FAA());
+            Callers.Add(new Characters.Callers.Four20());
+            Callers.Add(new Characters.Callers.Grandma());
+            Callers.Add(new Characters.Callers.IntroDuckTion());
+            Callers.Add(new Characters.Callers.LaborRep());
+            Callers.Add(new Characters.Callers.RoboCaller());
+            Callers.Add(new Characters.Callers.SantaIntro());
+            Callers.Add(new Characters.Callers.Welcome());
 
             Thread.Start();
         }
@@ -53,8 +62,16 @@ namespace C63.LudumDare31.Game
                     continue;
                 }
 
-                line.Connect(callers.First());
+                int index = Random.Next(callers.Length);
+
+                line.Connect(callers[index]);
             }
+        }
+
+        static public System.Random Random
+        {
+            get;
+            private set;
         }
 
         static public System.Threading.Thread Thread
