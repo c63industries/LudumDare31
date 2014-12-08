@@ -6,5 +6,20 @@
         {
             InitializeComponent();
         }
+
+        private void PINKSLIP1_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void PinkSlip_Load(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
