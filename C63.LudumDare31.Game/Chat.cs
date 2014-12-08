@@ -88,5 +88,10 @@ namespace C63.LudumDare31.Game
         {
 
         }
+
+        private void pnlQuestions_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+
+        }
     }
 }
