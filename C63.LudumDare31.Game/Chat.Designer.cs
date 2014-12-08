@@ -55,8 +55,8 @@
             // 
             this.spltChat.Panel2.BackColor = System.Drawing.Color.Transparent;
             this.spltChat.Panel2.Controls.Add(this.pnlQuestions);
-            this.spltChat.Size = new System.Drawing.Size(654, 406);
-            this.spltChat.SplitterDistance = 304;
+            this.spltChat.Size = new System.Drawing.Size(718, 525);
+            this.spltChat.SplitterDistance = 337;
             this.spltChat.TabIndex = 0;
             // 
             // txtDialog
@@ -66,9 +66,10 @@
             this.txtDialog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDialog.Location = new System.Drawing.Point(0, 0);
             this.txtDialog.Name = "txtDialog";
-            this.txtDialog.Size = new System.Drawing.Size(654, 304);
+            this.txtDialog.Size = new System.Drawing.Size(718, 337);
             this.txtDialog.TabIndex = 0;
             this.txtDialog.Text = "";
+            this.txtDialog.TextChanged += new System.EventHandler(this.txtDialog_TextChanged);
             // 
             // pnlQuestions
             // 
@@ -77,7 +78,7 @@
             this.pnlQuestions.ForeColor = System.Drawing.Color.Transparent;
             this.pnlQuestions.Location = new System.Drawing.Point(0, 0);
             this.pnlQuestions.Name = "pnlQuestions";
-            this.pnlQuestions.Size = new System.Drawing.Size(654, 98);
+            this.pnlQuestions.Size = new System.Drawing.Size(718, 184);
             this.pnlQuestions.TabIndex = 0;
             // 
             // Chat
@@ -86,14 +87,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(678, 430);
+            this.ClientSize = new System.Drawing.Size(742, 549);
             this.ControlBox = false;
             this.Controls.Add(this.spltChat);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Chat";
             this.ShowInTaskbar = false;
-            this.Text = "Chat";
+            this.Text = "ICU";
             this.spltChat.Panel1.ResumeLayout(false);
             this.spltChat.Panel2.ResumeLayout(false);
             this.spltChat.ResumeLayout(false);

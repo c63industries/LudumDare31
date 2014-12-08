@@ -59,7 +59,7 @@
             this.RightToLeftLayout = true;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Notepad";
+            this.Text = "Notepad--";
             this.ResumeLayout(false);
             this.PerformLayout();
 
