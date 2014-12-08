@@ -4,7 +4,7 @@ namespace C63.LudumDare31.Game
 {
     public partial class Phone : System.Windows.Forms.Form
     {
-        private System.Collections.Generic.Dictionary<System.Windows.Forms.Button, System.Media.SoundPlayer> _Audio;
+        private System.Collections.Generic.Dictionary<Form.Buttons.Number, System.Media.SoundPlayer> _Audio;
 
         public Phone()
         {
@@ -12,20 +12,24 @@ namespace C63.LudumDare31.Game
 
             InitializeComponent();
 
-            this._Audio = new System.Collections.Generic.Dictionary<System.Windows.Forms.Button, System.Media.SoundPlayer>();
+            this.btnHangUp.Click += this.OnClick;
+            this.btnHold.Click += this.OnClick;
+            this.btnTransfer.Click += this.OnClick;
 
-            this._Audio.Add(this.BTN0, new System.Media.SoundPlayer("Audio\\Buttons\\0.wav"));
-            this._Audio.Add(this.BTN1, new System.Media.SoundPlayer("Audio\\Buttons\\1.wav"));
-            this._Audio.Add(this.BTN2, new System.Media.SoundPlayer("Audio\\Buttons\\2.wav"));
-            this._Audio.Add(this.BTN3, new System.Media.SoundPlayer("Audio\\Buttons\\3.wav"));
-            this._Audio.Add(this.BTN4, new System.Media.SoundPlayer("Audio\\Buttons\\4.wav"));
-            this._Audio.Add(this.BTN5, new System.Media.SoundPlayer("Audio\\Buttons\\5.wav"));
-            this._Audio.Add(this.BTN6, new System.Media.SoundPlayer("Audio\\Buttons\\6.wav"));
-            this._Audio.Add(this.BTN7, new System.Media.SoundPlayer("Audio\\Buttons\\7.wav"));
-            this._Audio.Add(this.BTN8, new System.Media.SoundPlayer("Audio\\Buttons\\8.wav"));
-            this._Audio.Add(this.BTN9, new System.Media.SoundPlayer("Audio\\Buttons\\9.wav"));
-            this._Audio.Add(this.BTNAST, new System.Media.SoundPlayer("Audio\\Buttons\\star.wav"));
-            this._Audio.Add(this.BTNPOU, new System.Media.SoundPlayer("Audio\\Buttons\\pound.wav"));
+            this._Audio = new System.Collections.Generic.Dictionary<Form.Buttons.Number,System.Media.SoundPlayer>();
+
+            this._Audio.Add(this.btnZero, new System.Media.SoundPlayer("Audio\\Buttons\\0.wav"));
+            this._Audio.Add(this.btnOne, new System.Media.SoundPlayer("Audio\\Buttons\\1.wav"));
+            this._Audio.Add(this.btnTwo, new System.Media.SoundPlayer("Audio\\Buttons\\2.wav"));
+            this._Audio.Add(this.btnThree, new System.Media.SoundPlayer("Audio\\Buttons\\3.wav"));
+            this._Audio.Add(this.btnFour, new System.Media.SoundPlayer("Audio\\Buttons\\4.wav"));
+            this._Audio.Add(this.btnFive, new System.Media.SoundPlayer("Audio\\Buttons\\5.wav"));
+            this._Audio.Add(this.btnSix, new System.Media.SoundPlayer("Audio\\Buttons\\6.wav"));
+            this._Audio.Add(this.btnSeven, new System.Media.SoundPlayer("Audio\\Buttons\\7.wav"));
+            this._Audio.Add(this.btnEight, new System.Media.SoundPlayer("Audio\\Buttons\\8.wav"));
+            this._Audio.Add(this.btnNine, new System.Media.SoundPlayer("Audio\\Buttons\\9.wav"));
+            this._Audio.Add(this.btnStar, new System.Media.SoundPlayer("Audio\\Buttons\\star.wav"));
+            this._Audio.Add(this.btnPound, new System.Media.SoundPlayer("Audio\\Buttons\\pound.wav"));
 
             foreach(var button in this._Audio.Keys)
             {
@@ -41,12 +45,12 @@ namespace C63.LudumDare31.Game
 
         private void OnButton(object sender, System.Windows.Forms.MouseEventArgs mouseEventArgs)
         {
-            if (!(sender is System.Windows.Forms.Button))
+            if (!(sender is Form.Buttons.Number))
             {
                 return;
             }
 
-            var button = (System.Windows.Forms.Button)sender;
+            var button = (Form.Buttons.Number)sender;
 
             if (!this._Audio.ContainsKey(button))
             {
@@ -56,24 +60,24 @@ namespace C63.LudumDare31.Game
             this._Audio[button].Play();
         }
 
-        private void BTNTRA_Click(object sender, System.EventArgs e)
+        private void OnClick(object sender, System.EventArgs e)
         {
             if (this.Lines.Current == null)
             {
                 return;
             }
-
-            this.Lines.Current.Transfer();
-        }
-
-        private void BTNCAL_Click(object sender, System.EventArgs e)
-        {
-            if (this.Lines.Current == null)
+            else if(sender == this.btnHangUp)
             {
-                return;
+                this.Lines.Current.Disconnect();
             }
-
-            this.Lines.Current.Hold();
+            else if(sender == this.btnHold)
+            {
+                this.Lines.Current.Hold();
+            }
+            else if(sender == this.btnTransfer)
+            {
+                this.Lines.Current.Transfer();
+            }
         }
     }
 }

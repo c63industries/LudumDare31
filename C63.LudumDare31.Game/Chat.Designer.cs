@@ -93,7 +93,7 @@
             this.MinimizeBox = false;
             this.Name = "Chat";
             this.ShowInTaskbar = false;
-            this.Text = "Chat";
+            this.Text = "ICU";
             this.spltChat.Panel1.ResumeLayout(false);
             this.spltChat.Panel2.ResumeLayout(false);
             this.spltChat.ResumeLayout(false);

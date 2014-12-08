@@ -43,11 +43,11 @@ namespace C63.LudumDare31.Game
             Callers.Add(new Characters.Callers.IntroDuckTion());
             Callers.Add(new Characters.Callers.SantaIntro());
 
-            Callers.Add(new Characters.Callers.FAA());
+            //Callers.Add(new Characters.Callers.FAA());
             Callers.Add(new Characters.Callers.Four20());
             Callers.Add(new Characters.Callers.Grandma());
             Callers.Add(new Characters.Callers.LaborRep());
-            Callers.Add(new Characters.Callers.RoboCaller());
+            //Callers.Add(new Characters.Callers.RoboCaller());
 
             Thread.Start();
         }
