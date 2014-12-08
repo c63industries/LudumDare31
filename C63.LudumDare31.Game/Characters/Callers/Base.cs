@@ -64,6 +64,9 @@
         {
             this.Connected = false;
 
+            Program.Chat.Clear();
+            Program.Chat.Hide();
+
             System.Console.WriteLine("{0} is {1}.", this, hold ? "holding" : "disconnected");
 
             if (this.OnDisconnect == null)
