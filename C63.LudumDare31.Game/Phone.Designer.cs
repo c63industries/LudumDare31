@@ -191,7 +191,7 @@
             // 
             // BTNTRA
             // 
-            this.BTNTRA.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNTRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNTRA.Location = new System.Drawing.Point(27, 131);
             this.BTNTRA.Name = "BTNTRA";
             this.BTNTRA.Size = new System.Drawing.Size(87, 28);
@@ -201,7 +201,7 @@
             // 
             // BTNCAL
             // 
-            this.BTNCAL.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNCAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCAL.Location = new System.Drawing.Point(27, 224);
             this.BTNCAL.Name = "BTNCAL";
             this.BTNCAL.Size = new System.Drawing.Size(87, 25);
@@ -211,10 +211,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(203, 46);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 28);
+            this.textBox1.Size = new System.Drawing.Size(123, 26);
             this.textBox1.TabIndex = 20;
             this.textBox1.Text = "Caller ID";
             // 
@@ -231,7 +231,7 @@
             // 
             // Line2
             // 
-            this.Line2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Line2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Line2.Location = new System.Drawing.Point(412, 270);
             this.Line2.Name = "Line2";
             this.Line2.Size = new System.Drawing.Size(78, 23);
@@ -246,6 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(573, 352);
+            this.ControlBox = false;
             this.Controls.Add(this.Line2);
             this.Controls.Add(this.Line1);
             this.Controls.Add(this.textBox1);
@@ -264,8 +265,12 @@
             this.Controls.Add(this.BTN3);
             this.Controls.Add(this.BTN2);
             this.Controls.Add(this.BTN1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Phone";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phone";
             this.Load += new System.EventHandler(this.Phone_Load);
             this.ResumeLayout(false);
