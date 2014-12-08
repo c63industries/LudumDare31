@@ -47,21 +47,21 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Line1 = new System.Windows.Forms.Button();
             this.Line2 = new System.Windows.Forms.Button();
-            this.line4 = new C63.LudumDare31.Game.Form.Buttons.Line();
-            this.line5 = new C63.LudumDare31.Game.Form.Buttons.Line();
-            this.bossLine1 = new C63.LudumDare31.Game.Form.Buttons.BossLine();
-            this.number1 = new C63.LudumDare31.Game.Form.Buttons.Number();
-            this.number2 = new C63.LudumDare31.Game.Form.Buttons.Number();
-            this.number3 = new C63.LudumDare31.Game.Form.Buttons.Number();
-            this.number4 = new C63.LudumDare31.Game.Form.Buttons.Number();
-            this.number5 = new C63.LudumDare31.Game.Form.Buttons.Number();
-            this.number6 = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.number7 = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.number8 = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.number9 = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.number10 = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.number11 = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.number12 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number4 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number5 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number6 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number3 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number2 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.number1 = new C63.LudumDare31.Game.Form.Buttons.Number();
+            this.bossLine1 = new C63.LudumDare31.Game.Form.Buttons.BossLine();
+            this.line5 = new C63.LudumDare31.Game.Form.Buttons.Line();
+            this.line4 = new C63.LudumDare31.Game.Form.Buttons.Line();
             this.SuspendLayout();
             // 
             // BTN1
@@ -223,7 +223,6 @@
             // 
             this.BTNTRA.BackColor = System.Drawing.Color.Khaki;
             this.BTNTRA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTNTRA.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNTRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNTRA.Location = new System.Drawing.Point(27, 131);
             this.BTNTRA.Name = "BTNTRA";
@@ -236,7 +235,6 @@
             // 
             this.BTNCAL.BackColor = System.Drawing.Color.Khaki;
             this.BTNCAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BTNCAL.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCAL.Location = new System.Drawing.Point(27, 224);
             this.BTNCAL.Name = "BTNCAL";
@@ -249,7 +247,6 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.Khaki;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(203, 46);
             this.textBox1.Name = "textBox1";
@@ -274,7 +271,6 @@
             // 
             this.Line2.BackColor = System.Drawing.Color.Khaki;
             this.Line2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Line2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Line2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Line2.Location = new System.Drawing.Point(412, 270);
             this.Line2.Name = "Line2";
@@ -283,135 +279,6 @@
             this.Line2.Text = "Line 2";
             this.Line2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Line2.UseVisualStyleBackColor = false;
-            // 
-            // line4
-            // 
-            this.line4.BackColor = System.Drawing.Color.DarkGray;
-            this.line4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.line4.Image_Connected = null;
-            this.line4.Image_Disconnected = null;
-            this.line4.Image_Incomming = null;
-            this.line4.Location = new System.Drawing.Point(497, 194);
-            this.line4.Name = "line4";
-            this.line4.Size = new System.Drawing.Size(75, 23);
-            this.line4.TabIndex = 26;
-            this.line4.Text = "line4";
-            // 
-            // line5
-            // 
-            this.line5.BackColor = System.Drawing.Color.DarkGray;
-            this.line5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.line5.Image_Connected = null;
-            this.line5.Image_Disconnected = null;
-            this.line5.Image_Incomming = null;
-            this.line5.Location = new System.Drawing.Point(497, 270);
-            this.line5.Name = "line5";
-            this.line5.Size = new System.Drawing.Size(75, 23);
-            this.line5.TabIndex = 27;
-            this.line5.Text = "line5";
-            // 
-            // bossLine1
-            // 
-            this.bossLine1.BackColor = System.Drawing.Color.DarkGray;
-            this.bossLine1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bossLine1.Image_Connected = null;
-            this.bossLine1.Image_Disconnected = null;
-            this.bossLine1.Image_Incomming = null;
-            this.bossLine1.Location = new System.Drawing.Point(497, 118);
-            this.bossLine1.Name = "bossLine1";
-            this.bossLine1.Size = new System.Drawing.Size(75, 23);
-            this.bossLine1.TabIndex = 28;
-            this.bossLine1.Text = "bossLine1";
-            // 
-            // number1
-            // 
-            this.number1.Audio_MouseDown = null;
-            this.number1.BackColor = System.Drawing.Color.Black;
-            this.number1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.number1.Character = '\0';
-            this.number1.ForeColor = System.Drawing.Color.White;
-            this.number1.Image_MouseDown = null;
-            this.number1.Image_MouseUp = null;
-            this.number1.Location = new System.Drawing.Point(13, 13);
-            this.number1.Name = "number1";
-            this.number1.Size = new System.Drawing.Size(24, 23);
-            this.number1.TabIndex = 29;
-            this.number1.Text = "number1";
-            // 
-            // number2
-            // 
-            this.number2.Audio_MouseDown = null;
-            this.number2.BackColor = System.Drawing.Color.Black;
-            this.number2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.number2.Character = '\0';
-            this.number2.ForeColor = System.Drawing.Color.White;
-            this.number2.Image_MouseDown = null;
-            this.number2.Image_MouseUp = null;
-            this.number2.Location = new System.Drawing.Point(43, 13);
-            this.number2.Name = "number2";
-            this.number2.Size = new System.Drawing.Size(24, 23);
-            this.number2.TabIndex = 30;
-            this.number2.Text = "number2";
-            // 
-            // number3
-            // 
-            this.number3.Audio_MouseDown = null;
-            this.number3.BackColor = System.Drawing.Color.Black;
-            this.number3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.number3.Character = '\0';
-            this.number3.ForeColor = System.Drawing.Color.White;
-            this.number3.Image_MouseDown = null;
-            this.number3.Image_MouseUp = null;
-            this.number3.Location = new System.Drawing.Point(73, 12);
-            this.number3.Name = "number3";
-            this.number3.Size = new System.Drawing.Size(24, 23);
-            this.number3.TabIndex = 31;
-            this.number3.Text = "number3";
-            // 
-            // number4
-            // 
-            this.number4.Audio_MouseDown = null;
-            this.number4.BackColor = System.Drawing.Color.Black;
-            this.number4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.number4.Character = '\0';
-            this.number4.ForeColor = System.Drawing.Color.White;
-            this.number4.Image_MouseDown = null;
-            this.number4.Image_MouseUp = null;
-            this.number4.Location = new System.Drawing.Point(73, 41);
-            this.number4.Name = "number4";
-            this.number4.Size = new System.Drawing.Size(24, 23);
-            this.number4.TabIndex = 34;
-            this.number4.Text = "number4";
-            // 
-            // number5
-            // 
-            this.number5.Audio_MouseDown = null;
-            this.number5.BackColor = System.Drawing.Color.Black;
-            this.number5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.number5.Character = '\0';
-            this.number5.ForeColor = System.Drawing.Color.White;
-            this.number5.Image_MouseDown = null;
-            this.number5.Image_MouseUp = null;
-            this.number5.Location = new System.Drawing.Point(43, 42);
-            this.number5.Name = "number5";
-            this.number5.Size = new System.Drawing.Size(24, 23);
-            this.number5.TabIndex = 33;
-            this.number5.Text = "number5";
-            // 
-            // number6
-            // 
-            this.number6.Audio_MouseDown = null;
-            this.number6.BackColor = System.Drawing.Color.Black;
-            this.number6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.number6.Character = '\0';
-            this.number6.ForeColor = System.Drawing.Color.White;
-            this.number6.Image_MouseDown = null;
-            this.number6.Image_MouseUp = null;
-            this.number6.Location = new System.Drawing.Point(13, 42);
-            this.number6.Name = "number6";
-            this.number6.Size = new System.Drawing.Size(24, 23);
-            this.number6.TabIndex = 32;
-            this.number6.Text = "number6";
             // 
             // number7
             // 
@@ -503,14 +370,145 @@
             this.number12.TabIndex = 35;
             this.number12.Text = "number12";
             // 
+            // number4
+            // 
+            this.number4.Audio_MouseDown = null;
+            this.number4.BackColor = System.Drawing.Color.Black;
+            this.number4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number4.Character = '\0';
+            this.number4.ForeColor = System.Drawing.Color.White;
+            this.number4.Image_MouseDown = null;
+            this.number4.Image_MouseUp = null;
+            this.number4.Location = new System.Drawing.Point(73, 41);
+            this.number4.Name = "number4";
+            this.number4.Size = new System.Drawing.Size(24, 23);
+            this.number4.TabIndex = 34;
+            this.number4.Text = "number4";
+            // 
+            // number5
+            // 
+            this.number5.Audio_MouseDown = null;
+            this.number5.BackColor = System.Drawing.Color.Black;
+            this.number5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number5.Character = '\0';
+            this.number5.ForeColor = System.Drawing.Color.White;
+            this.number5.Image_MouseDown = null;
+            this.number5.Image_MouseUp = null;
+            this.number5.Location = new System.Drawing.Point(43, 42);
+            this.number5.Name = "number5";
+            this.number5.Size = new System.Drawing.Size(24, 23);
+            this.number5.TabIndex = 33;
+            this.number5.Text = "number5";
+            // 
+            // number6
+            // 
+            this.number6.Audio_MouseDown = null;
+            this.number6.BackColor = System.Drawing.Color.Black;
+            this.number6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number6.Character = '\0';
+            this.number6.ForeColor = System.Drawing.Color.White;
+            this.number6.Image_MouseDown = null;
+            this.number6.Image_MouseUp = null;
+            this.number6.Location = new System.Drawing.Point(13, 42);
+            this.number6.Name = "number6";
+            this.number6.Size = new System.Drawing.Size(24, 23);
+            this.number6.TabIndex = 32;
+            this.number6.Text = "number6";
+            // 
+            // number3
+            // 
+            this.number3.Audio_MouseDown = null;
+            this.number3.BackColor = System.Drawing.Color.Black;
+            this.number3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number3.Character = '\0';
+            this.number3.ForeColor = System.Drawing.Color.White;
+            this.number3.Image_MouseDown = null;
+            this.number3.Image_MouseUp = null;
+            this.number3.Location = new System.Drawing.Point(73, 12);
+            this.number3.Name = "number3";
+            this.number3.Size = new System.Drawing.Size(24, 23);
+            this.number3.TabIndex = 31;
+            this.number3.Text = "number3";
+            // 
+            // number2
+            // 
+            this.number2.Audio_MouseDown = null;
+            this.number2.BackColor = System.Drawing.Color.Black;
+            this.number2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number2.Character = '\0';
+            this.number2.ForeColor = System.Drawing.Color.White;
+            this.number2.Image_MouseDown = null;
+            this.number2.Image_MouseUp = null;
+            this.number2.Location = new System.Drawing.Point(43, 13);
+            this.number2.Name = "number2";
+            this.number2.Size = new System.Drawing.Size(24, 23);
+            this.number2.TabIndex = 30;
+            this.number2.Text = "number2";
+            // 
+            // number1
+            // 
+            this.number1.Audio_MouseDown = null;
+            this.number1.BackColor = System.Drawing.Color.Black;
+            this.number1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.number1.Character = '\0';
+            this.number1.ForeColor = System.Drawing.Color.White;
+            this.number1.Image_MouseDown = null;
+            this.number1.Image_MouseUp = null;
+            this.number1.Location = new System.Drawing.Point(13, 13);
+            this.number1.Name = "number1";
+            this.number1.Size = new System.Drawing.Size(24, 23);
+            this.number1.TabIndex = 29;
+            this.number1.Text = "number1";
+            // 
+            // bossLine1
+            // 
+            this.bossLine1.BackColor = System.Drawing.Color.Transparent;
+            this.bossLine1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bossLine1.BackgroundImage")));
+            this.bossLine1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bossLine1.Image_Connected = ((System.Drawing.Image)(resources.GetObject("bossLine1.Image_Connected")));
+            this.bossLine1.Image_Disconnected = ((System.Drawing.Image)(resources.GetObject("bossLine1.Image_Disconnected")));
+            this.bossLine1.Image_Incomming = ((System.Drawing.Image)(resources.GetObject("bossLine1.Image_Incomming")));
+            this.bossLine1.Location = new System.Drawing.Point(497, 118);
+            this.bossLine1.Name = "bossLine1";
+            this.bossLine1.Size = new System.Drawing.Size(129, 41);
+            this.bossLine1.TabIndex = 28;
+            this.bossLine1.Text = "bossLine1";
+            // 
+            // line5
+            // 
+            this.line5.BackColor = System.Drawing.Color.Transparent;
+            this.line5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("line5.BackgroundImage")));
+            this.line5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.line5.Image_Connected = ((System.Drawing.Image)(resources.GetObject("line5.Image_Connected")));
+            this.line5.Image_Disconnected = ((System.Drawing.Image)(resources.GetObject("line5.Image_Disconnected")));
+            this.line5.Image_Incomming = ((System.Drawing.Image)(resources.GetObject("line5.Image_Incomming")));
+            this.line5.Location = new System.Drawing.Point(497, 257);
+            this.line5.Name = "line5";
+            this.line5.Size = new System.Drawing.Size(129, 36);
+            this.line5.TabIndex = 27;
+            this.line5.Text = "line5";
+            // 
+            // line4
+            // 
+            this.line4.BackColor = System.Drawing.Color.Transparent;
+            this.line4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("line4.BackgroundImage")));
+            this.line4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.line4.Image_Connected = ((System.Drawing.Image)(resources.GetObject("line4.Image_Connected")));
+            this.line4.Image_Disconnected = ((System.Drawing.Image)(resources.GetObject("line4.Image_Disconnected")));
+            this.line4.Image_Incomming = ((System.Drawing.Image)(resources.GetObject("line4.Image_Incomming")));
+            this.line4.Location = new System.Drawing.Point(497, 181);
+            this.line4.Name = "line4";
+            this.line4.Size = new System.Drawing.Size(129, 40);
+            this.line4.TabIndex = 26;
+            this.line4.Text = "line4";
+            // 
             // Phone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackColor = System.Drawing.Color.Maroon;
-            this.ClientSize = new System.Drawing.Size(573, 352);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(682, 352);
             this.ControlBox = false;
             this.Controls.Add(this.number7);
             this.Controls.Add(this.number8);
@@ -545,8 +543,8 @@
             this.Controls.Add(this.BTN3);
             this.Controls.Add(this.BTN2);
             this.Controls.Add(this.BTN1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Phone";
