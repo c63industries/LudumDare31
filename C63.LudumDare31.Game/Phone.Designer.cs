@@ -45,7 +45,7 @@
             this.btnThree = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.btnTwo = new C63.LudumDare31.Game.Form.Buttons.Number();
             this.btnOne = new C63.LudumDare31.Game.Form.Buttons.Number();
-            this.btnLineBoss = new C63.LudumDare31.Game.Form.Buttons.BossLine();
+            this.btnLineBoss = new C63.LudumDare31.Game.Form.Buttons.Line.Boss();
             this.btnLine2 = new C63.LudumDare31.Game.Form.Buttons.Line();
             this.btnLine1 = new C63.LudumDare31.Game.Form.Buttons.Line();
             this.SuspendLayout();
@@ -381,7 +381,7 @@
         private System.Windows.Forms.TextBox txtCallerID;
         private Form.Buttons.Line btnLine1;
         private Form.Buttons.Line btnLine2;
-        private Form.Buttons.BossLine btnLineBoss;
+        private Form.Buttons.Line.Boss btnLineBoss;
         private Form.Buttons.Number btnOne;
         private Form.Buttons.Number btnTwo;
         private Form.Buttons.Number btnThree;

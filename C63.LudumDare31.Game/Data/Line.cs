@@ -1,12 +1,19 @@
 ﻿namespace C63.LudumDare31.Game.Data
 {
-    public class Line
+    public partial class Line
     {
         public Line(Form.Buttons.Line button)
         {
             this.Button = button;
 
             Program.Phone.Lines.OnChanged += this.OnLineChanged;
+
+            if(Program.Phone.Lines.Contains(this))
+            {
+                return;
+            }
+
+            Program.Phone.Lines.Add(this);
         }
 
         public Form.Buttons.Line Button
@@ -15,11 +22,16 @@
             private set;
         }
 
-        public bool Call(Characters.Callers.Base caller)
+        public virtual bool Call(Characters.Callers.Base caller)
         {
             this.Holding = false;
 
             if (this.Caller != null)
+            {
+                return false;
+            }
+
+            if(caller == Game.Boss)
             {
                 return false;
             }

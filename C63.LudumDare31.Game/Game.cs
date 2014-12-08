@@ -8,7 +8,7 @@ namespace C63.LudumDare31.Game
 
         static Game()
         {
-            Boss = new Characters.Boss();
+            Boss = new Characters.Callers.Santa();
             Callers = new System.Collections.Generic.List<Characters.Callers.Base>();
             Random = new System.Random();
             Thread = new System.Threading.Thread(Loop)
@@ -19,7 +19,7 @@ namespace C63.LudumDare31.Game
             };
         }
 
-        static public Characters.Boss Boss
+        static public Characters.Callers.Santa Boss
         {
             get;
             private set;
@@ -37,15 +37,18 @@ namespace C63.LudumDare31.Game
             private set;
         }
 
+        static public void End()
+        {
+            Program.Chat.Hide();
+            Program.Notepad.Hide();
+            Program.Phone.Hide();
+
+            Program.PinkSlip.Show();
+        }
+
         static public void Initialize()
         {
             Callers.Add(new Characters.Callers.Welcome());
-            Callers.Add(new Characters.Callers.IntroDuckTion());
-            Callers.Add(new Characters.Callers.SantaIntro());
-
-            Callers.Add(new Characters.Callers.Four20());
-            Callers.Add(new Characters.Callers.Grandma());
-            Callers.Add(new Characters.Callers.LaborRep());
 
             Thread.Start();
         }
@@ -71,6 +74,15 @@ namespace C63.LudumDare31.Game
         {
             get;
             private set;
+        }
+
+        static public void Start()
+        {
+            Program.Chat.Show();
+            Program.Notepad.Show();
+            Program.Phone.Show();
+
+            Program.PinkSlip.Hide();
         }
 
         static public System.Threading.Thread Thread
