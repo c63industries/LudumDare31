@@ -15,6 +15,9 @@ namespace C63.LudumDare31.Game.Characters.Callers
 
         private new void Connected()
         {
+            Game.Callers.Remove(this);
+
+            Game.Callers.Add(new Characters.Callers.Four20());
             Game.Callers.Add(new Characters.Callers.Grandma());
             Game.Callers.Add(new Characters.Callers.GrandmaPI());
             Game.Callers.Add(new Characters.Callers.HR());
@@ -28,6 +31,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
 
             if (transfered)
             {
+                this.Emotions.Happiness--;
 
                 this.Dialog.Add
                     (
@@ -83,7 +87,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                                             "Well it's about to melt, because you gonna get fired!",
                                                             () =>
                                                             {
-                                                                this.Emotions.Happiness--;
+                                                                Game.End();
                                                             }
                                                         );
                                                 }
