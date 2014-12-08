@@ -15,9 +15,11 @@ namespace C63.LudumDare31.Game.Characters.Callers
 
         private new void Connected()
         {
-            Game.Callers.Add(new Characters.Callers.Four20());
             Game.Callers.Add(new Characters.Callers.Grandma());
+            Game.Callers.Add(new Characters.Callers.GrandmaPI());
+            Game.Callers.Add(new Characters.Callers.HR());
             Game.Callers.Add(new Characters.Callers.LaborRep());
+            Game.Callers.Add(new Characters.Callers.Safety());
         }
 
         public void OnDuck(bool transfered)
