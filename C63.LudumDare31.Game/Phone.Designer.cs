@@ -221,13 +221,10 @@
             // 
             // BTNTRA
             // 
-<<<<<<< HEAD
             this.BTNTRA.BackColor = System.Drawing.Color.Khaki;
             this.BTNTRA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNTRA.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-=======
             this.BTNTRA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.BTNTRA.Location = new System.Drawing.Point(27, 131);
             this.BTNTRA.Name = "BTNTRA";
             this.BTNTRA.Size = new System.Drawing.Size(87, 28);
@@ -237,13 +234,10 @@
             // 
             // BTNCAL
             // 
-<<<<<<< HEAD
             this.BTNCAL.BackColor = System.Drawing.Color.Khaki;
             this.BTNCAL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNCAL.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-=======
             this.BTNCAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.BTNCAL.Location = new System.Drawing.Point(27, 224);
             this.BTNCAL.Name = "BTNCAL";
             this.BTNCAL.Size = new System.Drawing.Size(87, 25);
@@ -253,13 +247,10 @@
             // 
             // textBox1
             // 
-<<<<<<< HEAD
             this.textBox1.BackColor = System.Drawing.Color.Khaki;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Source Code Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-=======
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.textBox1.Location = new System.Drawing.Point(203, 46);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(123, 26);
@@ -281,13 +272,10 @@
             // 
             // Line2
             // 
-<<<<<<< HEAD
             this.Line2.BackColor = System.Drawing.Color.Khaki;
             this.Line2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Line2.Font = new System.Drawing.Font("Lucida Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-=======
             this.Line2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.Line2.Location = new System.Drawing.Point(412, 270);
             this.Line2.Name = "Line2";
             this.Line2.Size = new System.Drawing.Size(78, 23);
@@ -519,12 +507,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.DarkGray;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-=======
             this.BackColor = System.Drawing.Color.Maroon;
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.ClientSize = new System.Drawing.Size(573, 352);
             this.ControlBox = false;
             this.Controls.Add(this.number7);
@@ -560,22 +545,15 @@
             this.Controls.Add(this.BTN3);
             this.Controls.Add(this.BTN2);
             this.Controls.Add(this.BTN1);
-<<<<<<< HEAD
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-=======
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.Name = "Phone";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phone";
-<<<<<<< HEAD
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Load += new System.EventHandler(this.Phone_Load);
-=======
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,11 +10,6 @@ namespace C63.LudumDare31.Game
         {
             InitializeComponent();
 
-<<<<<<< HEAD
-   
-
-=======
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
             this._Questions = new System.Collections.Generic.Dictionary<System.Windows.Forms.LinkLabel, Data.Question>();
         }
 
@@ -38,8 +33,6 @@ namespace C63.LudumDare31.Game
 
         private void OnQuestion(object sender, System.EventArgs e)
         {
-<<<<<<< HEAD
-=======
             if(!(sender is System.Windows.Forms.LinkLabel))
             {
                 return;
@@ -57,8 +50,6 @@ namespace C63.LudumDare31.Game
             Data.Question question = _Questions[linkLabel];
 
             question.Ask();
->>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
-
         }
 
         public new void Update()
