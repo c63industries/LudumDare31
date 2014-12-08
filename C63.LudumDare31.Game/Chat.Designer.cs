@@ -75,11 +75,13 @@
             // 
             this.pnlQuestions.AutoScroll = true;
             this.pnlQuestions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlQuestions.ForeColor = System.Drawing.Color.Transparent;
             this.pnlQuestions.Location = new System.Drawing.Point(0, 0);
             this.pnlQuestions.Name = "pnlQuestions";
             this.pnlQuestions.Size = new System.Drawing.Size(718, 184);
             this.pnlQuestions.TabIndex = 0;
+            this.pnlQuestions.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlQuestions_Paint);
             // 
             // Chat
             // 
