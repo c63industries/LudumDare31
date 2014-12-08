@@ -40,7 +40,7 @@
             this.NTPTXT1.Location = new System.Drawing.Point(0, 0);
             this.NTPTXT1.Multiline = true;
             this.NTPTXT1.Name = "NTPTXT1";
-            this.NTPTXT1.Size = new System.Drawing.Size(341, 303);
+            this.NTPTXT1.Size = new System.Drawing.Size(382, 420);
             this.NTPTXT1.TabIndex = 0;
             this.NTPTXT1.Text = "Put your words here.";
             // 
@@ -52,6 +52,7 @@
             this.ClientSize = new System.Drawing.Size(382, 420);
             this.ControlBox = false;
             this.Controls.Add(this.NTPTXT1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Notepad";

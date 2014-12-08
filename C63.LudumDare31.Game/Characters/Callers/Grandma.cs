@@ -4,8 +4,11 @@ namespace C63.LudumDare31.Game.Characters.Callers
 {
     public class Grandma : Base
     {
+<<<<<<< HEAD
+=======
         public static Grandma grandmaHappiness;
 
+>>>>>>> aa02400a3e6d7d6b7bf8a74cb4252c07f1b3a243
         public Grandma()
             : base()
         {
