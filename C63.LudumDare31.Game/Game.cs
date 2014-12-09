@@ -8,7 +8,6 @@ namespace C63.LudumDare31.Game
 
         static Game()
         {
-            Boss = new Characters.Callers.Santa();
             Callers = new System.Collections.Generic.List<Characters.Callers.Base>();
             Random = new System.Random();
             Thread = new System.Threading.Thread(Loop)
@@ -78,13 +77,20 @@ namespace C63.LudumDare31.Game
 
         static public void Start()
         {
+            Callers.Clear();
+
+            foreach (var line in Program.Phone.Lines)
+            {
+                line.Disconnect();
+            }
+
+            Boss = new Characters.Callers.Santa();
+
             Program.Chat.Hide();
             Program.PinkSlip.Hide(); 
             
             Program.Notepad.Show();
             Program.Phone.Show();
-
-            Callers.Clear();
 
             Callers.Add(new Characters.Callers.Welcome());
         }
