@@ -27,6 +27,8 @@
 
                 System.Console.WriteLine("{0} is calling on {1}.", caller, this);
 
+                this.SoundPlayer.Play();
+
                 return true;
             }
         }
