@@ -48,7 +48,7 @@ namespace C63.LudumDare31.Game
 
         static public void Initialize()
         {
-            Callers.Add(new Characters.Callers.Welcome());
+            Start();
 
             Thread.Start();
         }
@@ -78,11 +78,15 @@ namespace C63.LudumDare31.Game
 
         static public void Start()
         {
-            Program.Chat.Show();
+            Program.Chat.Hide();
+            Program.PinkSlip.Hide(); 
+            
             Program.Notepad.Show();
             Program.Phone.Show();
 
-            Program.PinkSlip.Hide();
+            Callers.Clear();
+
+            Callers.Add(new Characters.Callers.Welcome());
         }
 
         static public System.Threading.Thread Thread

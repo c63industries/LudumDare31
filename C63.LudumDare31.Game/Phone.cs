@@ -18,18 +18,18 @@ namespace C63.LudumDare31.Game
 
             this._Audio = new System.Collections.Generic.Dictionary<Form.Buttons.Number,System.Media.SoundPlayer>();
 
-            this._Audio.Add(this.btnZero, new System.Media.SoundPlayer("Audio\\Buttons\\0.wav"));
-            this._Audio.Add(this.btnOne, new System.Media.SoundPlayer("Audio\\Buttons\\1.wav"));
-            this._Audio.Add(this.btnTwo, new System.Media.SoundPlayer("Audio\\Buttons\\2.wav"));
-            this._Audio.Add(this.btnThree, new System.Media.SoundPlayer("Audio\\Buttons\\3.wav"));
-            this._Audio.Add(this.btnFour, new System.Media.SoundPlayer("Audio\\Buttons\\4.wav"));
-            this._Audio.Add(this.btnFive, new System.Media.SoundPlayer("Audio\\Buttons\\5.wav"));
-            this._Audio.Add(this.btnSix, new System.Media.SoundPlayer("Audio\\Buttons\\6.wav"));
-            this._Audio.Add(this.btnSeven, new System.Media.SoundPlayer("Audio\\Buttons\\7.wav"));
-            this._Audio.Add(this.btnEight, new System.Media.SoundPlayer("Audio\\Buttons\\8.wav"));
-            this._Audio.Add(this.btnNine, new System.Media.SoundPlayer("Audio\\Buttons\\9.wav"));
-            this._Audio.Add(this.btnStar, new System.Media.SoundPlayer("Audio\\Buttons\\star.wav"));
-            this._Audio.Add(this.btnPound, new System.Media.SoundPlayer("Audio\\Buttons\\pound.wav"));
+            this._Audio.Add(this.btnZero, new System.Media.SoundPlayer(Properties.Resources.sndButton0));
+            this._Audio.Add(this.btnOne, new System.Media.SoundPlayer(Properties.Resources.sndButton1));
+            this._Audio.Add(this.btnTwo, new System.Media.SoundPlayer(Properties.Resources.sndButton2));
+            this._Audio.Add(this.btnThree, new System.Media.SoundPlayer(Properties.Resources.sndButton3));
+            this._Audio.Add(this.btnFour, new System.Media.SoundPlayer(Properties.Resources.sndButton4));
+            this._Audio.Add(this.btnFive, new System.Media.SoundPlayer(Properties.Resources.sndButton5));
+            this._Audio.Add(this.btnSix, new System.Media.SoundPlayer(Properties.Resources.sndButton6));
+            this._Audio.Add(this.btnSeven, new System.Media.SoundPlayer(Properties.Resources.sndButton7));
+            this._Audio.Add(this.btnEight, new System.Media.SoundPlayer(Properties.Resources.sndButton8));
+            this._Audio.Add(this.btnNine, new System.Media.SoundPlayer(Properties.Resources.sndButton9));
+            this._Audio.Add(this.btnStar, new System.Media.SoundPlayer(Properties.Resources.sndButtonStar));
+            this._Audio.Add(this.btnPound, new System.Media.SoundPlayer(Properties.Resources.sndButtonPound));
 
             foreach(var button in this._Audio.Keys)
             {

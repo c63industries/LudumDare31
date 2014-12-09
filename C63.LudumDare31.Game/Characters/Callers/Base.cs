@@ -86,6 +86,13 @@
 
         public void Transfer()
         {
+            this.Connected = false;
+
+            Program.Chat.Clear();
+            Program.Chat.Hide();
+
+            System.Console.WriteLine("{0} has been transferred.", this);
+            
             if (this.OnTransfer == null)
             {
                 return;
