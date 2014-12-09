@@ -60,9 +60,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.HotPink;
             this.ClientSize = new System.Drawing.Size(376, 366);
+            this.ControlBox = false;
             this.Controls.Add(this.btnReapply);
             this.Controls.Add(this.PINKSLIP1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "PinkSlip";
             this.Text = "Pink Slip";
             this.ResumeLayout(false);
