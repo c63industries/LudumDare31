@@ -18,7 +18,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                     {
                         this.Dialog.Add
                             (
-                                "What appears to be the issue?",
+                                "What appears to be the issue, ma'am?",
                                 "There are dead elves clogging up the ventilation to the boiler room. I'm sure you can figure out how this poses multiple issues.",
                                 ()=>
                                 {
@@ -35,7 +35,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                             {
                                                 this.Dialog.Add
                                                     (
-                                                        "I'm sorry, sir, but is this really something to bother Santa with?",
+                                                        "I'm sorry, ma'am, but is this really something to bother Santa with?",
                                                         "Do you have snow in your ears?! This is a big deal!",
                                                         ()=>
                                                             this.Emotions.Happiness--
@@ -63,7 +63,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                             {
                                                 this.Dialog.Add
                                                     (
-                                                        "Sir, I only make $2.15 plus tips an hour. But I guess it's better than nothing.",
+                                                        "Ma'am, I only make $2.15 plus tips an hour. But I guess it's better than nothing.",
                                                         "Just get your boss on the phone.",
                                                         ()=>
                                                             this.Emotions.Happiness--
@@ -77,7 +77,7 @@ namespace C63.LudumDare31.Game.Characters.Callers
                                         );
                                     this.Dialog.Add
                                         (
-                                            "I'm sorry, sir. Let me patch you through.",
+                                            "I'm sorry, ma'am. Let me patch you through.",
                                             "Make it quick. This is a safety emergency."
                                         );
                                 }
