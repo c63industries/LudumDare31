@@ -1,11 +1,12 @@
-﻿using System.Media;
-namespace C63.LudumDare31.Game.Data
+﻿namespace C63.LudumDare31.Game.Data
 {
     public partial class Line
     {
         public Line(Form.Buttons.Line button)
         {
             this.Button = button;
+
+            this.SoundPlayer = new System.Media.SoundPlayer(Properties.Resources.sndRing);
 
             Program.Phone.Lines.OnChanged += this.OnLineChanged;
 
@@ -39,10 +40,9 @@ namespace C63.LudumDare31.Game.Data
 
             this.Caller = caller;
 
-            SoundPlayer ring = new SoundPlayer(Properties.Resources.sndRing);
-            ring.Play();
-
             System.Console.WriteLine("{0} is calling on {1}.", caller, this);
+
+            this.SoundPlayer.Play();
 
             return true;
         }
@@ -71,6 +71,8 @@ namespace C63.LudumDare31.Game.Data
             this.Button.OnEvent(Form.Buttons.Line.Events.Connected);
 
             System.Console.WriteLine("{0} is connected on {1}.", this.Caller, this);
+
+            this.SoundPlayer.Stop();
         }
 
         public bool Connected
@@ -135,6 +137,12 @@ namespace C63.LudumDare31.Game.Data
             {
                 this.Hold();
             }
+        }
+
+        public System.Media.SoundPlayer SoundPlayer
+        {
+            get;
+            private set;
         }
 
         public void Transfer()

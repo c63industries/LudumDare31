@@ -67,14 +67,21 @@ namespace C63.LudumDare31.Game
 
             Data.Question[] questions = Program.Phone.Lines.Current.Caller.Dialog.Questions.OrderByDescending(q => q.Asked).ToArray();
 
+            System.Windows.Forms.ToolTip toolTip = new System.Windows.Forms.ToolTip();
+
             foreach(var question in questions)
             {
                 var link = new System.Windows.Forms.LinkLabel
                 {
+                    AutoSize = true,
+                    AutoEllipsis = true,
                     Dock = System.Windows.Forms.DockStyle.Top,
                     LinkColor = question.Asked > 0 ? System.Drawing.Color.DarkGray : System.Drawing.Color.Black,
+                    Padding = new System.Windows.Forms.Padding(0, 0, 4, 8),
                     Text = question.Dialog,
                 };
+
+                toolTip.SetToolTip(link, link.Text);
 
                 link.Click += this.OnQuestion;
 
