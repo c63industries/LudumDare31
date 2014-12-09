@@ -117,6 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="NTPTXT1.Text" xml:space="preserve">
+    <value>Welcome to Jingle Calls!
+
+You are Santa's newest secretary and it is your job to screen his calls for private investigators or other people Santa doesn't want to talk to. You better watch out! Santa is easily aggravated, and after snow many screw-ups you will receive your pink slip.
+
+When a line lights up, answer it by clicking it and then engaging the caller to figure out whether to hang up on them or transfer the call.
+
+To engage the caller, click on the dialogue options. Beware! Some of your answers will leave the caller acting quite cold towards you. If you make too many of them mad, then Santa will fire you.
+
+After you've decided what to do with the caller, you can either hang up on them by clicking on the hang up button, or let Santa deal with them by transferring the call. You can also hang up on the caller by clicking on the same line button that you used to answer the call.
+
+If you receive another call and want to answer that one before finishing your current call, you can hit the hold button.
+
+Game by (in order of most Github contributions): Jesse W. Schirmer, Charlotte M. Ellett,
+Stephanie Clark, Ashley West
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
