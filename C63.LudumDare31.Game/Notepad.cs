@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        private void NTPTXT1_TextChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
