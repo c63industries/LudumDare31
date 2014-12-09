@@ -157,9 +157,11 @@
 
             this.Caller.Transfer();
 
-            this.Button.OnEvent(Form.Buttons.Line.Events.Incomming);
+            this.Button.OnEvent(Form.Buttons.Line.Events.Disconnected);
 
             System.Console.WriteLine("{0} has been transfered.", this.Caller, this);
+
+            this.Caller = null;
         }
     }
 }
