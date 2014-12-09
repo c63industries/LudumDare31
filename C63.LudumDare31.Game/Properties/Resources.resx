@@ -187,4 +187,7 @@
   <data name="sndButtonStar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Audio\Buttons\star.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="sndRing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Audio\telephone_digital_ring_003.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

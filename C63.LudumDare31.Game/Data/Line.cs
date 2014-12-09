@@ -1,4 +1,5 @@
-﻿namespace C63.LudumDare31.Game.Data
+﻿using System.Media;
+namespace C63.LudumDare31.Game.Data
 {
     public partial class Line
     {
@@ -37,6 +38,9 @@
             }
 
             this.Caller = caller;
+
+            SoundPlayer ring = new SoundPlayer(Properties.Resources.sndRing);
+            ring.Play();
 
             System.Console.WriteLine("{0} is calling on {1}.", caller, this);
 
